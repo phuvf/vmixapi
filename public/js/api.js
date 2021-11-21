@@ -33,13 +33,15 @@ const vMixApi = {
         window.history.pushState('', '', `?function=${item.name}`);
         let html =   `
         <div class="card">
-            <h5 class="card-header">${item.name}</h5>
+            <h5 class="card-header">Function name: ${item.name}</h5>
             <div  class="card-body">
                 <p class=card-text'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
                 <p class='card-text'>Function parameters: <span class='inlineCode'>${this.renderParameters(item)}</span></p>
-                ${item.hasValue? this.renderValueFormat(item) : ""}
+                ${item.hasValue ? this.renderValueFormat(item) : ""}
                 <p class='card-text'>Examples:</p>
                 <dl>
+                    <dt>vMix "Add Shortcut" dialog box - value field</dt>
+                        <dd><div class='code'>${item.hasValue ? item.valueExample : "(empty)"}</div></dd>
                     <dt>HTTP</dt>
                     <dd>
                         <div class='code'><a href="${this.buildHttpExample(item)}" target="_blank">${this.buildHttpExample(item)}</a></div>
@@ -51,6 +53,10 @@ const vMixApi = {
                     <dt>VB.NET scripting</dt>
                     <dd>
                         <div class='code'>${this.buildScriptExample(item)}</div>
+                    </dd>
+                    <dt>Web scripting</dt>
+                    <dd>
+                        <div class='code'>${this.buildWebScriptingExample(item)}</div>
                     </dd>
                 </dl>
              
@@ -73,17 +79,24 @@ const vMixApi = {
         return `<p>Value parameter format: <span class='inlineCode'>${params.replace(/(\s*,?\s*)*$/, "")}</span></p>`;
     },
     buildHttpExample: function(item) {
-        let queryParams = "";
+        let queryParams = this.buildWebScriptingExample(item);
+        return `http://${this.ipAddress}:8088/api/?${queryParams}`;
+    },
+    buildWebScriptingExample: function(item) {
+        let q = [];
         if (item.hasInput) {
-            queryParams += `&Input=${encodeURIComponent(this.inputName)}`
-        }
-        if (item.hasDuration) {
-            queryParams += `&Duration=${this.duration}`
+            q.push(`Input=${encodeURIComponent(this.inputName)}`);
         }
         if (item.hasValue) {
-            queryParams += `&Value=${item.valueExample}`
+            q.push(`Value=${encodeURI(item.valueExample)}`);
         }
-        return `http://${this.ipAddress}:8088/api/?Function=${item.name}${queryParams}`;
+        if (item.hasDuration) {
+            q.push(`Duration=500`);
+        }
+        if (item.hasSelectedName) {
+            q.push(`SelectedName=${item.selectedNameExample}`);
+        }
+        return `Function=${item.name}${q.length == 0 ? "" : "&"}${q.join('&')}`
     },
     buildTcpExample: function(item) {
         let st = `FUNCTION ${item.name}`;
@@ -110,10 +123,10 @@ const vMixApi = {
             q.push(`Value:="${item.valueExample}"`);
         }
         if (item.hasDuration) {
-            q.push(`Duration:=500`);
+            q.push(`Duration:="500"`);
         }
         if (item.hasSelectedName) {
-            q.push(`SelectedName:=${item.selectedNameExample}`);
+            q.push(`SelectedName:="${item.selectedNameExample}"`);
         }
         return `API.Function("${item.name}"${q.length == 0 ? "" : ","}${q.join(', ')})`;
     }

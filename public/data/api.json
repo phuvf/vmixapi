@@ -5895,7 +5895,7 @@
       "valueParam3": "",
       "valueParam4": "",
       "valueExample": "My new text",
-      "selectedNameExample": "",
+      "selectedNameExample": "myTitle.Text",
       "notes": "Change text in title to [value]. Use SelectedName or SelectedIndex to specify which text field to modify."
     },
     {
@@ -5912,7 +5912,7 @@
       "valueParam3": "",
       "valueParam4": "",
       "valueExample": "#FF0000",
-      "selectedNameExample": "",
+      "selectedNameExample": "myTitle.Text",
       "notes": "Change colour of text in title using HTML format (#xxxxxx). Use SelectedName or SelectedIndex to specify which text field to modify."
     },
     {
@@ -5929,8 +5929,8 @@
       "valueParam3": "",
       "valueParam4": "",
       "valueExample": "",
-      "selectedNameExample": "",
-      "notes": "Toggle text visibility in title. Use SelectedName or SelectedIndex to specify which text field to modify."
+      "selectedNameExample": "myTitle.Text",
+      "notes": "Toggle text visibility in title input. Use SelectedName or SelectedIndex to specify which text field to modify."
     },
     {
       "name": "SetTextVisibleOff",
@@ -5946,8 +5946,8 @@
       "valueParam3": "",
       "valueParam4": "",
       "valueExample": "",
-      "selectedNameExample": "",
-      "notes": "Hide text in title"
+      "selectedNameExample": "myTitle.Text",
+      "notes": "Hide text in a title input. Use SelectedName or SelectedIndex to specify which text field to modify."
     },
     {
       "name": "SetTextVisibleOn",
@@ -5963,8 +5963,8 @@
       "valueParam3": "",
       "valueParam4": "",
       "valueExample": "",
-      "selectedNameExample": "",
-      "notes": "Show text in title"
+      "selectedNameExample": "myTitle.Text",
+      "notes": "Show text in title input. Use SelectedName or SelectedIndex to specify which text field to modify."
     },
     {
       "name": "SetTickerSpeed",
