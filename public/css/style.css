@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.inlineCode {
+  background: var(--bs-light);
+  padding: 0.5em;
+  font-family: monospace;
+  border-radius: 10px;
+  color: var(--bs-primary);
+}
+.code {
+  background: var(--bs-light);
+  padding: 1em;
+  font-family: monospace;
+  font-size: 1.2em;
+  border-radius: 10px;
+  color: var(--bs-primary);
+}

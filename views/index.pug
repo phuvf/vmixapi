@@ -1,5 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  #apiList.accordion
+  h1 vMix API Reference
+  //- label.form-label(for='exampleDataList') Search
+  input#apiList.form-control.form-control-lg(list='apiListOptions' placeholder='Type to search...')
+  datalist#apiListOptions
+  hr
+  #apiDetails
+
+  a.btn.btn-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Link with href
+
+
+
+  #offcanvasExample.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasExampleLabel')
+    .offcanvas-header
+      h5#offcanvasExampleLabel.offcanvas-title Full API function list
+      button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+    .offcanvas-body
+      div
+        ul#referenceList

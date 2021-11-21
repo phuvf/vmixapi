@@ -1,0 +1,11 @@
+SelectTitlePreset
+SetOutput2
+SetOutput3
+SetOutput4
+SetOutputExternal2
+SetOutputFullscreen
+SetOutputFullscreen2
+TitleBeginAnimation
+SetImageVisible
+SetImageVisibleOff
+SetImageVisibleOn
