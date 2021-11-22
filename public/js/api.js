@@ -87,6 +87,7 @@ const vMixApi = {
         <div class="card apiCard">
             <h5 class="card-header">${item.name}</h5>
             <div  class="card-body">
+                ${item.alert ? item.alert : ""}
                 <p class=card-text' style='white-space: pre-wrap;'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
                 <table class='table'>
                     <tr><th>Parameter</th><th>Required</th></tr>

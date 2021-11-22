@@ -5145,7 +5145,8 @@
       "valueExample": "Input.Find(\"My title 01\").Text(\"Headline\") = \"Hello World!\"",
       "selectedNameExample": "",
       "notes": "Start a dynamic script by passing code as the value.",
-      "group": "scripting"
+      "group": "scripting",
+      "alert": "<div class='alert alert-danger'>As of vMix v24.0.0.60, this function has been disabled for security reasons. See <a href='https://www.vmix.com/knowledgebase/article.aspx/316/scriptstartdynamic-disabled-in-api'>this article</a> for details and alternatives.</div>"
     },
     {
       "name": "ScriptStop",
