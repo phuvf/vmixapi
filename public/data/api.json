@@ -68,7 +68,7 @@
       "valueParam4": "",
       "valueExample": "50",
       "selectedNameExample": "",
-      "notes": "Seconds to add or subtract from current countdown time",
+      "notes": "Seconds to add or subtract from current countdown time.",
       "group": "title"
     },
     {
@@ -5209,14 +5209,14 @@
       "hasSelectedName": 0,
       "inputNotes": "",
       "valueParam1": "category",
-      "valueParam1Notes": "All,Red,Green,Orange,Purple,Aqua,Blue",
+      "valueParam1Notes": "One of: All, Red, Green, Orange, Purple, Aqua, Blue",
       "valueParam2": "",
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
       "valueExample": "Red",
       "selectedNameExample": "",
-      "notes": "Change to Category according to Value (All,Red,Green,Orange,Purple,Aqua,Blue)",
+      "notes": "Change to input category.",
       "group": "input"
     },
     {
