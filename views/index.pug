@@ -2,20 +2,22 @@ extends layout
 
 block content
   h1 vMix API Reference
-  //- label.form-label(for='exampleDataList') Search
-  .input-group.input-group-lg.mt-5.mb-3
-    span.input-group-text Function:
+  .my-3 
+    a.btn.btn-outline-primary.mb-3(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
+  label.form-label(for='exampleDataList') Search 408 API functions:
+  .input-group.input-group-lg.mb-3
     input#apiList.form-control.form-control(list='apiListOptions' placeholder='Type to search...')
-    button.btn.btn-outline-secondary.d-none.d-lg-block(type='button') Clear
+    button.btn.btn-outline-secondary#inputClear(type='button') Clear
   datalist#apiListOptions
-  a.btn.btn-outline-primary.mb-3(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
   
   #apiDetails
 
   nav.navbar.fixed-bottom.navbar-light.bg-light
     .container-fluid.d-flex
-      p.fs-7.mb-0 This utility is not an official vMix product.
-      p.mb-0 A 10% project by 
+      p.fs-7.mb-0 Not an official vMix product.
+      p.mb-0.text-align-right A 10% project by 
+        br
+        | the team at 
         a(href="https://octocue.com") OctoCue
         | .
       

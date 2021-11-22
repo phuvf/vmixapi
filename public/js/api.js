@@ -5,17 +5,30 @@ const vMixApi = {
     inputName: 'My input',
     duration: 100,
     items: [],
+    datalist: "",
+    apiOptions: "",
     init: function () {
         var el = document.getElementById('apiList');
         el.addEventListener('change', (event) => {
             //console.log(`Datalist change ${el.value}`);
             vMixApi.showApiEntry(el.value);
+            document.activeElement.blur();
+        });
+        document.getElementById('inputClear').addEventListener('click', function () {
+            console.log(`Clear click`);
+            el.value="";
         });
         fetch('/data/api.json')
             .then(response => response.json())
             .then((data) => {
                 vMixApi.items = data;
-                data.forEach(item => vMixApi.addToDatalist(item));
+
+                this.datalist = "";
+                this.apiOptions = "";
+                data.forEach(item => vMixApi.buildLists(item));
+                document.getElementById('referenceList').innerHTML = vMixApi.datalist;
+                document.getElementById('apiListOptions').innerHTML = vMixApi.apiOptions;
+
                 var urlParams = new URLSearchParams(window.location.search);
                 if (urlParams.has('function')) {
                     let func = urlParams.get('function');
@@ -26,11 +39,12 @@ const vMixApi = {
                 }
             });
     },
-    addToDatalist: function (item) {
+    buildLists: function (item) {
         let html = `<option value="${item.name}">`;
-        document.getElementById('apiListOptions').innerHTML += html;
+        this.apiOptions += html;
         html = `<li><a data-function="${item.name}" href='/?function=${item.name}' title="${item.notes}">${item.name}</a></li>`;
-        document.getElementById('referenceList').innerHTML += html;
+        this.datalist += html;
+        //document.getElementById('referenceList').innerHTML += html;
     },
     showApiEntry: function (name) {
         const item = this.items.filter((i) => i.name == name)[0];
