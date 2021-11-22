@@ -1,6 +1,5 @@
 body {
   padding: 50px;
-  font-size: 14px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -25,12 +24,39 @@ a {
 }
 
  body{
-  padding: 30px;
+  padding: 0;
 }
 
-@media (max-width: 768px) {
-  body{
-    padding: 10px;
-  }
- }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+article {
+  flex: 1;
+}
+
+.apiCard {
+  border: 3px solid var(--bs-primary);
+  background-color: var(--bs-primary);
+}
+
+.apiCard .card-header {
+  background-color: var(--bs-primary);
+  color: white;
+  font-weight: bold;
+  /* border-radius: 0; */
+  line-height: 1.5em;
+}
+
+.apiCard .card-body {
+  background-color: #eef5ff;
+}

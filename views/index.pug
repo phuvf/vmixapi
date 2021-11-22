@@ -1,26 +1,19 @@
 extends layout
 
 block content
-  h1 vMix API Reference
-  .my-3.mb-3.d-flex.flex-row(style='column-gap: 1em;')
-    a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
-    a.btn.btn-outline-primary(type='button' data-bs-toggle='modal' data-bs-target='#aboutModal') About
-  label.form-label(for='exampleDataList') Search 408 API functions:
-  .input-group.input-group-lg.mb-3
+  .d-flex.align-items-center
+    .flex-grow-1
+      h1 vMix API Reference
+    .d-flex.flex-row(style='column-gap: 1em;')
+      a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
+      a.btn.btn-outline-primary(type='button' data-bs-toggle='modal' data-bs-target='#aboutModal') About
+  label.form-label.mt-5(for='exampleDataList') Search 408 API functions:
+  .input-group.input-group-lg.mb-5
     input#apiList.form-control.form-control(list='apiListOptions' placeholder='Type to search...')
     button.btn.btn-outline-secondary#inputClear(type='button') Clear
   datalist#apiListOptions
   
   #apiDetails
-
-  nav.navbar.fixed-bottom.navbar-light.bg-light
-    .container-fluid.d-flex
-      p.fs-7.mb-0 Not an official vMix product.
-      p.mb-0.text-align-right A 10% project by 
-        br
-        | the team at 
-        a(href="https://octocue.com") OctoCue
-        | .
       
   .modal#aboutModal(tabindex='-1')
     .modal-dialog.modal-lg

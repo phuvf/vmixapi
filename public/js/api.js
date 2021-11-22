@@ -54,7 +54,7 @@ const vMixApi = {
         }
         window.history.pushState('', '', `?function=${item.name}`);
         let html = `
-        <div class="card">
+        <div class="card apiCard">
             <h5 class="card-header">${item.name}</h5>
             <div  class="card-body">
                 <p class=card-text' style='white-space: pre-wrap;'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
