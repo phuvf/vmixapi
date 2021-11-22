@@ -48,7 +48,7 @@
       "valueParam4": "",
       "valueExample": "Image|c:\\path\\to\\image.jpg",
       "selectedNameExample": "",
-      "notes": "Create a new Input based on information provided in Value.\nSamples:\nVideo|c:\\path\\to\\video.avi\nImage|c:\\path\\to\\image.jpg\nPhotos|c:\\path\\to\\folder\nXaml|c:\\path\\to\\title.xaml\nVideoList|c:\\path\\to\\playlist.m3u\nColour|HTMLColor\nAudioFile|c:\\path\\to\\audio.wav\nFlash|c:\\path\\to\\flash.swf\nPowerPoint|c:\\path\\to\\powerpoint.pptx\nValue = Type|Filename"
+      "notes": "Create a new Input based on information provided in Value.\n\nSamples:\nVideo|c:\\path\\to\\video.avi\nImage|c:\\path\\to\\image.jpg\nPhotos|c:\\path\\to\\folder\nXaml|c:\\path\\to\\title.xaml\nVideoList|c:\\path\\to\\playlist.m3u\nColour|HTMLColor\nAudioFile|c:\\path\\to\\audio.wav\nFlash|c:\\path\\to\\flash.swf\nPowerPoint|c:\\path\\to\\powerpoint.pptx\nValue = Type|Filename"
     },
     {
       "name": "AdjustCountdown",

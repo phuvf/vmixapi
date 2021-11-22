@@ -43,7 +43,7 @@ const vMixApi = {
         <div class="card">
             <h5 class="card-header">${item.name}</h5>
             <div  class="card-body">
-                <p class=card-text'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
+                <p class=card-text' style='white-space: pre-wrap;'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
                 <p class='card-text'>Function parameters: <span class='inlineCode'>${this.renderParameters(item)}</span></p>
                 ${item.hasValue ? this.renderValueFormat(item) : ""}
                 <p class='card-text'>Examples:</p>
