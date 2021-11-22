@@ -2,8 +2,9 @@ extends layout
 
 block content
   h1 vMix API Reference
-  .my-3 
-    a.btn.btn-outline-primary.mb-3(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
+  .my-3.mb-3.d-flex.flex-row(style='column-gap: 1em;')
+    a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
+    a.btn.btn-outline-primary(type='button' data-bs-toggle='modal' data-bs-target='#aboutModal') About
   label.form-label(for='exampleDataList') Search 408 API functions:
   .input-group.input-group-lg.mb-3
     input#apiList.form-control.form-control(list='apiListOptions' placeholder='Type to search...')
@@ -21,7 +22,43 @@ block content
         a(href="https://octocue.com") OctoCue
         | .
       
-
+  .modal#aboutModal(tabindex='-1')
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h5.modal-title About vMixAPI.com
+          button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+        .modal-body
+          p vMixAPI.com is a third-party utility built by 
+            a(href="https://github.com/phuvf") Nick Roberts
+            | .
+          p My day job is Lead Developer for 
+            a(href="https://octocue.com") OctoCue 
+            | - a remote slide control tool - but I also program and operate vMix shows for corporate clients worldwide.
+          p vMixApi.com is not made, operated or endorsed, by StudioCoast Pty Ltd. (the makers of vMix) - don't write to them if you find a mistake.
+          p All the API information is sourced from vMix's own documentation, and the original source material should be referenced if required:
+          ul 
+            li
+              a(href="https://www.vmix.com/help23/index.htm?ShortcutFunctionReference.html") vMix shortcut function reference table
+            li
+              a(href="https://www.vmix.com/help23/index.htm?VBNetScripting.html") VB.NET scripting reference
+            li
+              a(href="https://www.vmix.com/help23/index.htm?WebScripting.html") Web scripting reference
+            li
+              a(href="https://www.vmix.com/help23/index.htm?TCPAPI.html") TCP API reference
+            li 
+              a(href="https://www.vmix.com/help23/index.htm?DeveloperAPI.html") HTTP GET API reference
+          p If you find this utility useful, consider buying me a coffee:
+            script(type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js')
+            script(type='text/javascript').
+              kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'X8X073GQ3');kofiwidget2.draw();
+          p Questions? Comments? Found a mistake? 
+            a(href="mailto: nick@zinc.uk.com") Drop me an email
+            | .
+          p Finally, there's no guarantee that anything on this site is relevant, correct or useful. Use at your own risk.
+          p Happy vMixing!
+        .modal-footer
+          button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
 
   #offcanvasExample.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasExampleLabel')
     .offcanvas-header
