@@ -23,3 +23,9 @@ a {
   border-radius: 10px;
   color: var(--bs-primary);
 }
+
+@media (max-width: 768px) {
+  body{
+    padding: 10px;
+  }
+ }

@@ -422,7 +422,7 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Turn off automatically playing next item in a list."
+      "notes": "Stop automatically playing next list item on specified input."
     },
     {
       "name": "AutoPlayNextOn",
@@ -439,7 +439,7 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Turn on automatically playing next item in a list."
+      "notes": "Automatically play next list item on specified input."
     },
     {
       "name": "AutoPlayOff",
@@ -5639,7 +5639,7 @@
       "valueParam2Notes": "Input name or number",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "1,My input",
+      "valueExample": "1,My new overlay source input",
       "selectedNameExample": "",
       "notes": "Change Overlay in Input MultiView according to Value parameter."
     },

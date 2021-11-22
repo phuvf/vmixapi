@@ -3,13 +3,22 @@ extends layout
 block content
   h1 vMix API Reference
   //- label.form-label(for='exampleDataList') Search
-  input#apiList.form-control.form-control-lg(list='apiListOptions' placeholder='Type to search...')
+  .input-group.input-group-lg.mt-5.mb-3
+    span.input-group-text Function:
+    input#apiList.form-control.form-control(list='apiListOptions' placeholder='Type to search...')
+    button.btn.btn-outline-secondary.d-none.d-lg-block(type='button') Clear
   datalist#apiListOptions
-  hr
+  a.btn.btn-outline-primary.mb-3(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
+  
   #apiDetails
 
-  a.btn.btn-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Link with href
-
+  nav.navbar.fixed-bottom.navbar-light.bg-light
+    .container-fluid.d-flex
+      p.fs-7 This utility is not an official vMix product.
+      p A 10% project by 
+        a(href="https://octocue.com") OctoCue
+        | .
+      
 
 
   #offcanvasExample.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasExampleLabel')

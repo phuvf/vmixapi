@@ -5,35 +5,43 @@ const vMixApi = {
     inputName: 'My input',
     duration: 100,
     items: [],
-    init: function(){
-        var el = document.getElementById('apiList')
+    init: function () {
+        var el = document.getElementById('apiList');
         el.addEventListener('change', (event) => {
             //console.log(`Datalist change ${el.value}`);
             vMixApi.showApiEntry(el.value);
-          });
+        });
         fetch('/data/api.json')
             .then(response => response.json())
             .then((data) => {
                 vMixApi.items = data;
                 data.forEach(item => vMixApi.addToDatalist(item));
+                var urlParams = new URLSearchParams(window.location.search);
+                if (urlParams.has('function')) {
+                    let func = urlParams.get('function');
+                    if (data.some(f => f.name === func)) {
+                        vMixApi.showApiEntry(func);
+                        document.getElementById('apiList').value = func;
+                    }
+                }
             });
     },
-    addToDatalist: function(item) {
+    addToDatalist: function (item) {
         let html = `<option value="${item.name}">`;
         document.getElementById('apiListOptions').innerHTML += html;
-        html = `<li><a data-function="${item.name}" href='#' title="${item.notes}">${item.name}</a></li>`;
+        html = `<li><a data-function="${item.name}" href='/?function=${item.name}' title="${item.notes}">${item.name}</a></li>`;
         document.getElementById('referenceList').innerHTML += html;
     },
-    showApiEntry: function(name) {
-        const item = this.items.filter((i)=>i.name == name)[0];
+    showApiEntry: function (name) {
+        const item = this.items.filter((i) => i.name == name)[0];
         if (!item) {
             console.log(`Function ${name} not found`);
             return;
         }
         window.history.pushState('', '', `?function=${item.name}`);
-        let html =   `
+        let html = `
         <div class="card">
-            <h5 class="card-header">Function name: ${item.name}</h5>
+            <h5 class="card-header">${item.name}</h5>
             <div  class="card-body">
                 <p class=card-text'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
                 <p class='card-text'>Function parameters: <span class='inlineCode'>${this.renderParameters(item)}</span></p>
@@ -42,7 +50,11 @@ const vMixApi = {
                 <dl>
                     <dt>vMix "Add Shortcut" dialog box - value field</dt>
                         <dd><div class='code'>${item.hasValue ? item.valueExample : "(empty)"}</div></dd>
-                    <dt>HTTP</dt>
+                    <dt>Companion custom command</dt>
+                    <dd>
+                        <div class='code'>${this.buildCompanionFragment(item)}</div>
+                    </dd>
+                    <dt>HTTP GET request</dt>
                     <dd>
                         <div class='code'><a href="${this.buildHttpExample(item)}" target="_blank">${this.buildHttpExample(item)}</a></div>
                     </dd>
@@ -56,7 +68,7 @@ const vMixApi = {
                     </dd>
                     <dt>Web scripting</dt>
                     <dd>
-                        <div class='code'>${this.buildWebScriptingExample(item)}</div>
+                        <div class='code'>${this.buildWebScriptingFragment(item)}</div>
                     </dd>
                 </dl>
              
@@ -64,25 +76,34 @@ const vMixApi = {
         </div>`;
         document.getElementById("apiDetails").innerHTML = html;
     },
-    renderParameters: function(item) {
+    renderParameters: function (item) {
         if (!item.hasValue && !item.hasInput && !item.hasDuration) {
             return "None";
         }
         let params = [];
-        if (item.hasValue) {params.push("Value");} 
-        if (item.hasInput) {params.push("Input");} 
-        if (item.hasDuration) {params.push("Duration");} 
+        if (item.hasValue) { params.push("Value"); }
+        if (item.hasInput) { params.push("Input"); }
+        if (item.hasDuration) { params.push("Duration"); }
         return params.toString();
     },
-    renderValueFormat: function(item) {
+    renderValueFormat: function (item) {
         let params = `${item.valueParam1},${item.valueParam2},${item.valueParam3},${item.valueParam4}`;
         return `<p>Value parameter format: <span class='inlineCode'>${params.replace(/(\s*,?\s*)*$/, "")}</span></p>`;
     },
-    buildHttpExample: function(item) {
-        let queryParams = this.buildWebScriptingExample(item);
-        return `http://${this.ipAddress}:8088/api/?${queryParams}`;
+    buildCompanionFragment: function (item) {
+        let q = [];
+        if (item.hasInput) {
+            q.push(`Input=${this.inputName}`);
+        }
+        if (item.hasValue) {
+            q.push(`Value=${item.valueExample}`);
+        }
+        if (item.hasDuration) {
+            q.push(`Duration=${this.duration}`);
+        }
+        return `${item.name} ${q.join('&')}`;
     },
-    buildWebScriptingExample: function(item) {
+    buildWebScriptingFragment: function (item) {
         let q = [];
         if (item.hasInput) {
             q.push(`Input=${encodeURIComponent(this.inputName)}`);
@@ -98,22 +119,15 @@ const vMixApi = {
         }
         return `Function=${item.name}${q.length == 0 ? "" : "&"}${q.join('&')}`
     },
-    buildTcpExample: function(item) {
-        let st = `FUNCTION ${item.name}`;
-        let q = [];
-        if (item.hasInput) {
-            q.push(`Input=${this.inputName}`);
-        }
-        if (item.hasValue) {
-            q.push(`Value=${item.valueExample}`);
-        }
-        if (item.hasDuration) {
-            q.push(`Duration=${this.duration}`);
-        }
-
-        return `${st} ${q.join('&')}\\r\\n`;
+    buildHttpExample: function (item) {
+        let queryParams = this.buildWebScriptingFragment(item);
+        return `http://${this.ipAddress}:8088/api/?${queryParams}`;
     },
-    buildScriptExample: function(item) {
+
+    buildTcpExample: function (item) {
+        return `FUNCTION ${this.buildCompanionFragment(item)}\\r\\n`;
+    },
+    buildScriptExample: function (item) {
         //API.Function("SetImageVisibleOff",Input:="Scorebug",SelectedName:="Top-Inning.Source")
         let q = [];
         if (item.hasInput) {
@@ -135,10 +149,10 @@ const vMixApi = {
 ready();
 
 function ready(fn) {
-    if (document.readyState != 'loading'){
-      vMixApi.init();
+    if (document.readyState != 'loading') {
+        vMixApi.init();
     } else {
-      document.addEventListener('DOMContentLoaded', vMixApi.init);
+        document.addEventListener('DOMContentLoaded', vMixApi.init);
     }
-  }
+}
 
