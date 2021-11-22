@@ -60,3 +60,7 @@ article {
 .apiCard .card-body {
   background-color: #eef5ff;
 }
+
+p.group-item {
+  margin-bottom: 0;
+}

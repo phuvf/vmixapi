@@ -7,6 +7,7 @@ const vMixApi = {
     items: [],
     datalist: "",
     apiOptions: "",
+    groups:[],
     init: function () {
         var el = document.getElementById('apiList');
         el.addEventListener('change', (event) => {
@@ -17,17 +18,23 @@ const vMixApi = {
         document.getElementById('inputClear').addEventListener('click', function () {
             console.log(`Clear click`);
             el.value="";
+            document.getElementById("apiDetails").innerHTML = "";
+            window.history.pushState('', '', `?`);
         });
         fetch('/data/api.json')
             .then(response => response.json())
             .then((data) => {
                 vMixApi.items = data;
-
+                console.log(data.length)
                 this.datalist = "";
                 this.apiOptions = "";
                 data.forEach(item => vMixApi.buildLists(item));
                 document.getElementById('referenceList').innerHTML = vMixApi.datalist;
                 document.getElementById('apiListOptions').innerHTML = vMixApi.apiOptions;
+
+                vMixApi.groups.sort((a,b) => a.id.localeCompare(b.id));
+                console.log(vMixApi.groups);
+                //document.getElementById('groupsWrapper').innerHTML = vMixApi.buildGroups();
 
                 var urlParams = new URLSearchParams(window.location.search);
                 if (urlParams.has('function')) {
@@ -40,11 +47,34 @@ const vMixApi = {
             });
     },
     buildLists: function (item) {
+        let activeGroup = this.groups.filter((g) => g.id === item.group)
+        if (activeGroup.length > 0) {
+            //console.log(`group ${item.group} found`);
+            //console.log(activeGroup);
+            activeGroup[0].items.push(item);
+        }
+        else {
+            //console.log(`Creating group ${item.group}`)
+            let newGroup = {id: item.group, items: [item]}
+            this.groups.push(newGroup);
+        }
         let html = `<option value="${item.name}">`;
         this.apiOptions += html;
         html = `<li><a data-function="${item.name}" href='/?function=${item.name}' title="${item.notes}">${item.name}</a></li>`;
         this.datalist += html;
         //document.getElementById('referenceList').innerHTML += html;
+    },
+    buildGroups: function(){
+        let html = "";
+        this.groups.forEach((g) => {
+            html += `<div class='group'><div class='group-header'>${camel2title(g.id)}</div>`;
+            g.items.forEach((item)=>{
+                html += `<p class='group-item'><a href='?function=${item.name}'>${item.name}</a></p>`;
+            });
+
+            html+= `</div>`;
+        });
+        return html;
     },
     showApiEntry: function (name) {
         const item = this.items.filter((i) => i.name == name)[0];
@@ -58,14 +88,33 @@ const vMixApi = {
             <h5 class="card-header">${item.name}</h5>
             <div  class="card-body">
                 <p class=card-text' style='white-space: pre-wrap;'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
-                <p class='card-text'>Function parameters: <span class='inlineCode'>${this.renderParameters(item)}</span></p>
-                ${item.hasValue ? this.renderValueFormat(item) : ""}
-                <p class='card-text'>Examples:</p>
-                <dl>
-                    <dt>vMix "Add Shortcut" dialog box - value field</dt>
-                        <dd><div class='code'>${item.hasValue ? item.valueExample : "(empty)"}</div></dd>
+                <table class='table'>
+                    <tr><th>Parameter</th><th>Required</th></tr>
+                    <tr><td>Input</td><td>${item.hasInput ? "Yes" : "No"}</td></tr>
+                    <tr><td>Value</td><td>${item.hasValue ? `Yes - format: ${this.renderValueFormat(item)}` : "No"}</td></tr>
+                    <tr><td>Duration</td><td>${item.hasDuration ? "Yes" : "No"}</td></tr>
+                    <tr><td>SelectedName</td><td>${item.hasSelectedName ? "Yes" : "No"}</td></tr>
+                </table>`;
+        if (item.valueParam1.concat(item.valueParam2) != "") {
+            html += `
+            <table class='table'>
+                    <tr><th>Value parameter element</th><th>Notes</th></tr>
+                    <tr><td><span class='inlineCode'>${item.valueParam1}</span></td><td style='white-space: pre-wrap;'>${item.valueParam1Notes}</td></tr>
+                    ${item.valueParam2 == "" ? "" : `<tr><td><span class='inlineCode'>${item.valueParam2}</span></td><td style='white-space: pre-wrap;'>${item.valueParam2Notes}</td></tr>`}
+                </table>
+            `
+        }
+                
+
+        html += `<h4 class='mb-3 mt-5'>Examples</h4>
+                <dl>`
+        if (item.hasValue) {
+            html += `<dt>vMix "Add Shortcut" dialog box - value field</dt>
+            <dd><div class='code'>${item.valueExample}</div></dd>`;
+        }
+        html +=`
                     <dt>Companion custom command</dt>
-                    <dd>
+                        <dd>
                         <div class='code'>${this.buildCompanionFragment(item)}</div>
                     </dd>
                     <dt>HTTP GET request</dt>
@@ -102,7 +151,7 @@ const vMixApi = {
     },
     renderValueFormat: function (item) {
         let params = `${item.valueParam1},${item.valueParam2},${item.valueParam3},${item.valueParam4}`;
-        return `<p>Value parameter format: <span class='inlineCode'>${params.replace(/(\s*,?\s*)*$/, "")}</span></p>`;
+        return `<span class='inlineCode'>${params.replace(/(\s*,?\s*)*$/, "")}</span>`;
     },
     buildCompanionFragment: function (item) {
         let q = [];
@@ -156,7 +205,7 @@ const vMixApi = {
         if (item.hasSelectedName) {
             q.push(`SelectedName:="${item.selectedNameExample}"`);
         }
-        return `API.Function("${item.name}"${q.length == 0 ? "" : ","}${q.join(', ')})`;
+        return `API.Function("${item.name}"${q.length == 0 ? "" : ", "}${q.join(', ')})`;
     }
 }
 
@@ -170,3 +219,7 @@ function ready(fn) {
     }
 }
 
+const camel2title = (camelCase) => camelCase
+  .replace(/([A-Z])/g, (match) => ` ${match}`)
+  .replace(/^./, (match) => match.toUpperCase())
+  .trim();

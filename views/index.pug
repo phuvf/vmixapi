@@ -7,13 +7,15 @@ block content
     .d-flex.flex-row(style='column-gap: 1em;')
       a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
       a.btn.btn-outline-primary(type='button' data-bs-toggle='modal' data-bs-target='#aboutModal') About
-  label.form-label.mt-5(for='exampleDataList') Search 408 API functions:
+  label.form-label.mt-5(for='exampleDataList') Search 406 API functions:
   .input-group.input-group-lg.mb-5
-    input#apiList.form-control.form-control(list='apiListOptions' placeholder='Type to search...')
+    input#apiList.form-control.form-control(list='apiListOptions' placeholder='Type to search...' autofocus)
     button.btn.btn-outline-secondary#inputClear(type='button') Clear
   datalist#apiListOptions
   
   #apiDetails
+
+  #groupsWrapper.d-flex.flex-wrap
       
   .modal#aboutModal(tabindex='-1')
     .modal-dialog.modal-lg
@@ -28,7 +30,7 @@ block content
           p My day job is Lead Developer for 
             a(href="https://octocue.com") OctoCue 
             | - a remote slide control tool - but I also program and operate vMix shows for corporate clients worldwide.
-          p vMixApi.com is not made, operated or endorsed, by StudioCoast Pty Ltd. (the makers of vMix) - don't write to them if you find a mistake.
+          p vMixAPI.com is not made, operated or endorsed, by StudioCoast Pty Ltd. (the makers of vMix) - don't write to them if you find a mistake.
           p All the API information is sourced from vMix's own documentation, and the original source material should be referenced if required:
           ul 
             li
@@ -51,7 +53,7 @@ block content
           p Finally, there's no guarantee that anything on this site is relevant, correct or useful. Use at your own risk.
           p Happy vMixing!
         .modal-footer
-          button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+          button.btn.btn-primary(type='button' data-bs-dismiss='modal') Close
 
   #offcanvasExample.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasExampleLabel')
     .offcanvas-header

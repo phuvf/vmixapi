@@ -14,7 +14,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Refresh all activator device lights and controls."
+      "notes": "Refresh all activator device lights and controls.",
+      "group": "general"
     },
     {
       "name": "ActiveInput",
@@ -31,7 +32,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Send specified input to Output 1."
+      "notes": "Send specified input to Output 1.",
+      "group": "input"
     },
     {
       "name": "AddInput",
@@ -41,14 +43,15 @@
       "hasSelectedName": 0,
       "inputNotes": "",
       "valueParam1": "inputType",
-      "valueParam1Notes": "Format is \"type|filename\"",
+      "valueParam1Notes": "Format \"type|filename\"\n\nSamples:\nVideo|c:\\path\\to\\video.avi\nImage|c:\\path\\to\\image.jpg\nPhotos|c:\\path\\to\\folder\nXaml|c:\\path\\to\\title.xaml\nVideoList|c:\\path\\to\\playlist.m3u\nColour|HTMLColor\nAudioFile|c:\\path\\to\\audio.wav\nFlash|c:\\path\\to\\flash.swf\nPowerPoint|c:\\path\\to\\powerpoint.pptx\nValue = Type|Filename",
       "valueParam2": "",
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
       "valueExample": "Image|c:\\path\\to\\image.jpg",
       "selectedNameExample": "",
-      "notes": "Create a new Input based on information provided in Value.\n\nSamples:\nVideo|c:\\path\\to\\video.avi\nImage|c:\\path\\to\\image.jpg\nPhotos|c:\\path\\to\\folder\nXaml|c:\\path\\to\\title.xaml\nVideoList|c:\\path\\to\\playlist.m3u\nColour|HTMLColor\nAudioFile|c:\\path\\to\\audio.wav\nFlash|c:\\path\\to\\flash.swf\nPowerPoint|c:\\path\\to\\powerpoint.pptx\nValue = Type|Filename"
+      "notes": "Create a new input.",
+      "group": "input"
     },
     {
       "name": "AdjustCountdown",
@@ -65,7 +68,8 @@
       "valueParam4": "",
       "valueExample": "50",
       "selectedNameExample": "",
-      "notes": "Seconds to add or subtract from current countdown time"
+      "notes": "Seconds to add or subtract from current countdown time",
+      "group": "title"
     },
     {
       "name": "Audio",
@@ -82,7 +86,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Toggle audio mute on/off on a single input."
+      "notes": "Toggle audio mute on/off on a single input.",
+      "group": "audio"
     },
     {
       "name": "AudioAuto",
@@ -99,7 +104,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "AudioAutoOff",
@@ -116,7 +122,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "AudioAutoOn",
@@ -133,7 +140,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "AudioBus",
@@ -150,7 +158,8 @@
       "valueParam4": "",
       "valueExample": "M",
       "selectedNameExample": "",
-      "notes": "Toggle audio bus on/off."
+      "notes": "Toggle audio bus on/off.",
+      "group": "audio"
     },
     {
       "name": "AudioBusOff",
@@ -167,7 +176,8 @@
       "valueParam4": "",
       "valueExample": "M",
       "selectedNameExample": "",
-      "notes": "Turn audio bus off."
+      "notes": "Turn audio bus off.",
+      "group": "audio"
     },
     {
       "name": "AudioBusOn",
@@ -184,7 +194,8 @@
       "valueParam4": "",
       "valueExample": "M",
       "selectedNameExample": "",
-      "notes": "Turn audio bus on."
+      "notes": "Turn audio bus on.",
+      "group": "audio"
     },
     {
       "name": "AudioMixerShowHide",
@@ -201,7 +212,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "AudioOff",
@@ -218,7 +230,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Turn audio off (mute) a single input."
+      "notes": "Turn audio off (mute) a single input.",
+      "group": "audio"
     },
     {
       "name": "AudioOn",
@@ -235,7 +248,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Turn audio on (unmute) a single input."
+      "notes": "Turn audio on (unmute) a single input.",
+      "group": "audio"
     },
     {
       "name": "AudioPluginOff",
@@ -252,7 +266,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turn off a single audio plugin."
+      "notes": "Turn off a single audio plugin.",
+      "group": "audio"
     },
     {
       "name": "AudioPluginOn",
@@ -269,7 +284,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turn on a single audio plugin."
+      "notes": "Turn on a single audio plugin.",
+      "group": "audio"
     },
     {
       "name": "AudioPluginOnOff",
@@ -286,7 +302,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Toggle on/off single audio plugin."
+      "notes": "Toggle on/off single audio plugin.",
+      "group": "audio"
     },
     {
       "name": "AudioPluginShow",
@@ -303,7 +320,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Show audio plugin editor for specified plugin."
+      "notes": "Show audio plugin editor for specified plugin.",
+      "group": "audio"
     },
     {
       "name": "AutoPauseOff",
@@ -320,7 +338,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "AutoPauseOn",
@@ -337,7 +356,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "AutoPlayFirst",
@@ -354,7 +374,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Toggle automatically playing first item in a list (with transition)."
+      "notes": "Toggle automatically playing first item in a list (with transition).",
+      "group": "input"
     },
     {
       "name": "AutoPlayFirstOff",
@@ -371,7 +392,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Turn off automatically playing first item in a list (with transition)."
+      "notes": "Turn off automatically playing first item in a list (with transition).",
+      "group": "input"
     },
     {
       "name": "AutoPlayFirstOn",
@@ -388,7 +410,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Turn on automatically playing first item in a list (with transition)."
+      "notes": "Turn on automatically playing first item in a list (with transition).",
+      "group": "input"
     },
     {
       "name": "AutoPlayNext",
@@ -405,7 +428,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Toggle automatically playing next item in a list."
+      "notes": "Toggle automatically playing next item in a list.",
+      "group": "input"
     },
     {
       "name": "AutoPlayNextOff",
@@ -422,7 +446,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Stop automatically playing next list item on specified input."
+      "notes": "Stop automatically playing next list item on specified input.",
+      "group": "input"
     },
     {
       "name": "AutoPlayNextOn",
@@ -439,7 +464,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Automatically play next list item on specified input."
+      "notes": "Automatically play next list item on specified input.",
+      "group": "input"
     },
     {
       "name": "AutoPlayOff",
@@ -456,7 +482,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "AutoPlayOn",
@@ -473,7 +500,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "AutoRestartOff",
@@ -490,7 +518,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "AutoRestartOn",
@@ -507,7 +536,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "BrowserBack",
@@ -524,7 +554,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "browser"
     },
     {
       "name": "BrowserForward",
@@ -541,7 +572,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "browser"
     },
     {
       "name": "BrowserKeyboardDisabled",
@@ -558,7 +590,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "browser"
     },
     {
       "name": "BrowserKeyboardEnabled",
@@ -575,7 +608,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "browser"
     },
     {
       "name": "BrowserMouseDisabled",
@@ -592,7 +626,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "browser"
     },
     {
       "name": "BrowserMouseEnabled",
@@ -609,7 +644,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "browser"
     },
     {
       "name": "BrowserNavigate",
@@ -626,7 +662,8 @@
       "valueParam4": "",
       "valueExample": "https://vmix.com",
       "selectedNameExample": "",
-      "notes": "Load new URL into browser input."
+      "notes": "Load new URL into browser input.",
+      "group": "browser"
     },
     {
       "name": "BrowserReload",
@@ -643,7 +680,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "browser"
     },
     {
       "name": "BusAAudio",
@@ -660,7 +698,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusAAudioOff",
@@ -677,7 +716,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusAAudioOn",
@@ -694,7 +734,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusAAudioPluginOff",
@@ -711,7 +752,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turn off specified audio plugin."
+      "notes": "Turn off specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "BusAAudioPluginOn",
@@ -728,7 +770,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turn on specified audio plugin."
+      "notes": "Turn on specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "BusAAudioPluginOnOff",
@@ -745,7 +788,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Toggle on/off specified audio plugin."
+      "notes": "Toggle on/off specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "BusAAudioPluginShow",
@@ -762,7 +806,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Show audio plugin editor for specified plugin."
+      "notes": "Show audio plugin editor for specified plugin.",
+      "group": "audio"
     },
     {
       "name": "BusBAudio",
@@ -779,7 +824,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusBAudioOff",
@@ -796,7 +842,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusBAudioOn",
@@ -813,7 +860,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusBAudioPluginOff",
@@ -830,7 +878,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turn off specified audio plugin."
+      "notes": "Turn off specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "BusBAudioPluginOn",
@@ -847,7 +896,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turn on specified audio plugin."
+      "notes": "Turn on specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "BusBAudioPluginOnOff",
@@ -864,7 +914,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Toggle on/off specified audio plugin."
+      "notes": "Toggle on/off specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "BusBAudioPluginShow",
@@ -881,7 +932,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Show audio plugin editor for specified plugin."
+      "notes": "Show audio plugin editor for specified plugin.",
+      "group": "audio"
     },
     {
       "name": "BusXAudio",
@@ -898,7 +950,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Value = Bus (M,A,B,C,D,E,F,G)"
+      "notes": "Value = Bus (M,A,B,C,D,E,F,G)",
+      "group": "audio"
     },
     {
       "name": "BusXAudioOff",
@@ -915,7 +968,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Value = Bus (M,A,B,C,D,E,F,G)"
+      "notes": "Value = Bus (M,A,B,C,D,E,F,G)",
+      "group": "audio"
     },
     {
       "name": "BusXAudioOn",
@@ -932,7 +986,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Value = Bus (M,A,B,C,D,E,F,G)"
+      "notes": "Value = Bus (M,A,B,C,D,E,F,G)",
+      "group": "audio"
     },
     {
       "name": "BusXAudioPluginOff",
@@ -949,7 +1004,8 @@
       "valueParam4": "",
       "valueExample": "A,1",
       "selectedNameExample": "",
-      "notes": "Turn off specified audio plugin."
+      "notes": "Turn off specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "BusXAudioPluginOn",
@@ -966,7 +1022,8 @@
       "valueParam4": "",
       "valueExample": "A,1",
       "selectedNameExample": "",
-      "notes": "Turn on specified audio plugin."
+      "notes": "Turn on specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "BusXAudioPluginOnOff",
@@ -983,7 +1040,8 @@
       "valueParam4": "",
       "valueExample": "A,1",
       "selectedNameExample": "",
-      "notes": "Toggle on/off specified audio plugin."
+      "notes": "Toggle on/off specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "BusXAudioPluginShow",
@@ -1000,7 +1058,8 @@
       "valueParam4": "",
       "valueExample": "A,1",
       "selectedNameExample": "",
-      "notes": "Show audio plugin editor for specified plugin."
+      "notes": "Show audio plugin editor for specified plugin.",
+      "group": "audio"
     },
     {
       "name": "BusXSendToMaster",
@@ -1017,7 +1076,8 @@
       "valueParam4": "",
       "valueExample": "A",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusXSendToMasterOff",
@@ -1034,7 +1094,8 @@
       "valueParam4": "",
       "valueExample": "A",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusXSendToMasterOn",
@@ -1051,7 +1112,8 @@
       "valueParam4": "",
       "valueExample": "A",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusXSolo",
@@ -1068,7 +1130,8 @@
       "valueParam4": "",
       "valueExample": "A",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusXSoloOff",
@@ -1085,7 +1148,8 @@
       "valueParam4": "",
       "valueExample": "A",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "BusXSoloOn",
@@ -1102,7 +1166,8 @@
       "valueParam4": "",
       "valueExample": "A",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "CallManagerShowHide",
@@ -1119,7 +1184,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Show/hide the call manager."
+      "notes": "Show/hide the call manager.",
+      "group": "videoCalls"
     },
     {
       "name": "ChangeCountdown",
@@ -1136,7 +1202,8 @@
       "valueParam4": "",
       "valueExample": "01:30:30",
       "selectedNameExample": "",
-      "notes": "Change countdown time according to Value as hh:mm:ss (00:00:00)"
+      "notes": "Change countdown time according to Value as hh:mm:ss (00:00:00)",
+      "group": "title"
     },
     {
       "name": "ColourCorrectionAuto",
@@ -1153,7 +1220,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Run basic auto colour correction."
+      "notes": "Run basic auto colour correction.",
+      "group": "input"
     },
     {
       "name": "ColourCorrectionReset",
@@ -1170,7 +1238,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Reset colour correction to default values."
+      "notes": "Reset colour correction to default values.",
+      "group": "input"
     },
     {
       "name": "CreateVirtualInput",
@@ -1187,7 +1256,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Create a new Virtual Input from the specified input."
+      "notes": "Create a new Virtual Input from the specified input.",
+      "group": "input"
     },
     {
       "name": "CutDirect",
@@ -1204,7 +1274,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Cuts the input directly to Output without changing Preview."
+      "notes": "Cuts the input directly to Output without changing Preview.",
+      "group": "transition"
     },
     {
       "name": "DataSourceAutoNextOff",
@@ -1221,7 +1292,8 @@
       "valueParam4": "",
       "valueExample": "Google Sheets,Sheet1",
       "selectedNameExample": "",
-      "notes": "Name of the Data Source, Table Name (optional) eg 'Excel/CSV,Sheet1'"
+      "notes": "Name of the Data Source, Table Name (optional) eg 'Excel/CSV,Sheet1'",
+      "group": "datasource"
     },
     {
       "name": "DataSourceAutoNextOn",
@@ -1238,7 +1310,8 @@
       "valueParam4": "",
       "valueExample": "Google Sheets,Sheet1",
       "selectedNameExample": "",
-      "notes": "Name of the Data Source, Table Name (optional) eg 'Excel/CSV,Sheet1'"
+      "notes": "Name of the Data Source, Table Name (optional) eg 'Excel/CSV,Sheet1'",
+      "group": "datasource"
     },
     {
       "name": "DataSourceAutoNextOnOff",
@@ -1255,7 +1328,8 @@
       "valueParam4": "",
       "valueExample": "Google Sheets,Sheet1",
       "selectedNameExample": "",
-      "notes": "Name of the Data Source, Table Name (optional) eg 'Excel/CSV,Sheet1'"
+      "notes": "Name of the Data Source, Table Name (optional) eg 'Excel/CSV,Sheet1'",
+      "group": "datasource"
     },
     {
       "name": "DataSourceNextRow",
@@ -1272,7 +1346,8 @@
       "valueParam4": "",
       "valueExample": "Google Sheets,Sheet1",
       "selectedNameExample": "",
-      "notes": "Name of the Data Source and Table Name (optional) eg 'Excel/CSV,Sheet1'"
+      "notes": "Name of the Data Source and Table Name (optional) eg 'Excel/CSV,Sheet1'",
+      "group": "datasource"
     },
     {
       "name": "DataSourcePreviousRow",
@@ -1289,7 +1364,8 @@
       "valueParam4": "",
       "valueExample": "Google Sheets,Sheet1",
       "selectedNameExample": "",
-      "notes": "Name of the Data Source and Table Name (optional) eg 'Excel/CSV,Sheet1'"
+      "notes": "Name of the Data Source and Table Name (optional) eg 'Excel/CSV,Sheet1'",
+      "group": "datasource"
     },
     {
       "name": "DataSourceSelectRow",
@@ -1306,7 +1382,8 @@
       "valueParam4": "Row number, 0 - n rows",
       "valueExample": "Google Sheets,Sheet1,3",
       "selectedNameExample": "",
-      "notes": "Name of the Data Source, Table Name (optional) and Row Index starting from 0 eg 'Excel/CSV,Sheet1,5'"
+      "notes": "Name of the Data Source, Table Name (optional) and Row Index starting from 0 eg 'Excel/CSV,Sheet1,5'",
+      "group": "datasource"
     },
     {
       "name": "DeinterlaceOff",
@@ -1323,7 +1400,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "DeinterlaceOn",
@@ -1340,7 +1418,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "FadeToBlack",
@@ -1357,7 +1436,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Toggle FTB on/off."
+      "notes": "Toggle FTB on/off.",
+      "group": "transition"
     },
     {
       "name": "Fullscreen",
@@ -1374,7 +1454,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Toggle Fullscreen on/off."
+      "notes": "Toggle Fullscreen on/off.",
+      "group": "output"
     },
     {
       "name": "FullscreenOff",
@@ -1391,7 +1472,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "FullscreenOn",
@@ -1408,7 +1490,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "InputPreviewHide",
@@ -1425,7 +1508,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Hide large preview of input."
+      "notes": "Hide large preview of input.",
+      "group": "input"
     },
     {
       "name": "InputPreviewShow",
@@ -1442,7 +1526,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Show large preview of input."
+      "notes": "Show large preview of input.",
+      "group": "input"
     },
     {
       "name": "InputPreviewShowHide",
@@ -1459,7 +1544,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Toggle large preview of input."
+      "notes": "Toggle large preview of input.",
+      "group": "input"
     },
     {
       "name": "KeyPress",
@@ -1476,7 +1562,8 @@
       "valueParam4": "",
       "valueExample": "a",
       "selectedNameExample": "",
-      "notes": "Send single key press to active window."
+      "notes": "Send single key press to active window.",
+      "group": "general"
     },
     {
       "name": "LastPreset",
@@ -1493,7 +1580,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Load the last preset."
+      "notes": "Load the last preset.",
+      "group": "preset"
     },
     {
       "name": "ListAdd",
@@ -1510,7 +1598,8 @@
       "valueParam4": "",
       "valueExample": "myimage.jpg",
       "selectedNameExample": "",
-      "notes": "Add item (filename) to list."
+      "notes": "Add item (filename) to list.",
+      "group": "input"
     },
     {
       "name": "ListExport",
@@ -1527,7 +1616,8 @@
       "valueParam4": "",
       "valueExample": "list.m3u",
       "selectedNameExample": "",
-      "notes": "Export list as M3U to filename."
+      "notes": "Export list as M3U to filename.",
+      "group": "input"
     },
     {
       "name": "ListPlayOut",
@@ -1544,7 +1634,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "ListRemove",
@@ -1561,7 +1652,8 @@
       "valueParam4": "",
       "valueExample": "3",
       "selectedNameExample": "",
-      "notes": "Remove from list by index."
+      "notes": "Remove from list by index.",
+      "group": "input"
     },
     {
       "name": "ListRemoveAll",
@@ -1578,7 +1670,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Remove all items from list."
+      "notes": "Remove all items from list.",
+      "group": "input"
     },
     {
       "name": "ListShowHide",
@@ -1595,7 +1688,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "ListShuffle",
@@ -1612,7 +1706,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Shuffle list."
+      "notes": "Shuffle list.",
+      "group": "input"
     },
     {
       "name": "LivePlayPause",
@@ -1629,7 +1724,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "LoopOff",
@@ -1646,7 +1742,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "LoopOn",
@@ -1663,7 +1760,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "MarkIn",
@@ -1680,7 +1778,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "MarkOut",
@@ -1697,7 +1796,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "MarkReset",
@@ -1714,7 +1814,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "MarkResetIn",
@@ -1731,7 +1832,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "MarkResetOut",
@@ -1748,7 +1850,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "MasterAudio",
@@ -1765,7 +1868,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "MasterAudioOff",
@@ -1782,7 +1886,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "MasterAudioOn",
@@ -1799,7 +1904,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "MasterAudioPluginOff",
@@ -1816,7 +1922,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turn off specified audio plugin."
+      "notes": "Turn off specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "MasterAudioPluginOn",
@@ -1833,7 +1940,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turn on specified audio plugin."
+      "notes": "Turn on specified audio plugin.",
+      "group": "audio"
     },
     {
       "name": "MasterAudioPluginOnOff",
@@ -1850,7 +1958,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Toggle on/off audio plugin."
+      "notes": "Toggle on/off audio plugin.",
+      "group": "audio"
     },
     {
       "name": "MasterAudioPluginShow",
@@ -1867,7 +1976,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Show specified audio plugin editor."
+      "notes": "Show specified audio plugin editor.",
+      "group": "audio"
     },
     {
       "name": "MirrorOff",
@@ -1884,7 +1994,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "MirrorOn",
@@ -1901,7 +2012,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "MoveInput",
@@ -1918,7 +2030,8 @@
       "valueParam4": "",
       "valueExample": "23",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "MoveMultiViewOverlay",
@@ -1935,7 +2048,8 @@
       "valueParam4": "",
       "valueExample": "2,3",
       "selectedNameExample": "",
-      "notes": "Move overlay in input MultiView to new position in stack."
+      "notes": "Move overlay in input MultiView to new position in stack.",
+      "group": "overlay"
     },
     {
       "name": "MultiViewOverlay",
@@ -1952,7 +2066,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Toggle on/off MultiView Overlay for input at specified index (starting from 1)."
+      "notes": "Toggle on/off MultiView Overlay for input at specified index (starting from 1).",
+      "group": "overlay"
     },
     {
       "name": "MultiViewOverlayOff",
@@ -1969,7 +2084,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Turn off MultiView Overlay for input at specified index (starting from 1)."
+      "notes": "Turn off MultiView Overlay for input at specified index (starting from 1).",
+      "group": "overlay"
     },
     {
       "name": "MultiViewOverlayOn",
@@ -1986,7 +2102,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Turn on MultiView Overlay for input at specified index (starting from 1)."
+      "notes": "Turn on MultiView Overlay for input at specified index (starting from 1).",
+      "group": "overlay"
     },
     {
       "name": "NDICommand",
@@ -2003,7 +2120,8 @@
       "valueParam4": "",
       "valueExample": "AnimateIn1",
       "selectedNameExample": "",
-      "notes": "Send specified command to NDI source"
+      "notes": "Send specified command to NDI source",
+      "group": "ndi"
     },
     {
       "name": "NDISelectSourceByIndex",
@@ -2020,7 +2138,8 @@
       "valueParam4": "",
       "valueExample": "3",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ndi"
     },
     {
       "name": "NDISelectSourceByName",
@@ -2037,7 +2156,8 @@
       "valueParam4": "",
       "valueExample": "NDISource4",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ndi"
     },
     {
       "name": "NDIStartRecording",
@@ -2054,7 +2174,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ndi"
     },
     {
       "name": "NDIStopRecording",
@@ -2071,7 +2192,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ndi"
     },
     {
       "name": "NextItem",
@@ -2088,7 +2210,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Move to next item in list."
+      "notes": "Move to next item in list.",
+      "group": "input"
     },
     {
       "name": "NextPicture",
@@ -2105,7 +2228,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Move to next picture for photo and PowerPoint inputs."
+      "notes": "Move to next picture for photo and PowerPoint inputs.",
+      "group": "input"
     },
     {
       "name": "NextPlayListEntry",
@@ -2122,7 +2246,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Move to next item in a running playList."
+      "notes": "Move to next item in a running playList.",
+      "group": "playlist"
     },
     {
       "name": "NextTitlePreset",
@@ -2139,7 +2264,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "title"
     },
     {
       "name": "OpenPreset",
@@ -2156,24 +2282,8 @@
       "valueParam4": "",
       "valueExample": "myPresetFile.vmix",
       "selectedNameExample": "",
-      "notes": "Load preset from the specified file."
-    },
-    {
-      "name": "Overlay",
-      "hasValue": 0,
-      "hasInput": 0,
-      "hasDuration": 0,
-      "hasSelectedName": 0,
-      "inputNotes": "",
-      "valueParam1": "",
-      "valueParam1Notes": "",
-      "valueParam2": "",
-      "valueParam2Notes": "",
-      "valueParam3": "",
-      "valueParam4": "",
-      "valueExample": "",
-      "selectedNameExample": "",
-      "notes": ""
+      "notes": "Load preset from the specified file.",
+      "group": "preset"
     },
     {
       "name": "OverlayInput1",
@@ -2190,7 +2300,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Toggle overlay1 on/off with specified input and stored transition."
+      "notes": "Toggle overlay1 on/off with specified input and stored transition.",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput1In",
@@ -2207,7 +2318,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Transition out to overlay1 with specified input."
+      "notes": "Transition out to overlay1 with specified input.",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput1Off",
@@ -2224,7 +2336,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Immediately switch overlay1 off (cut)"
+      "notes": "Immediately switch overlay1 off (cut)",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput1Out",
@@ -2241,7 +2354,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Transition out overlay1."
+      "notes": "Transition out overlay1.",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput1Zoom",
@@ -2258,7 +2372,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Zoom PIP overlay to fill fullscreen and vice versa"
+      "notes": "Zoom PIP overlay to fill fullscreen and vice versa",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput2",
@@ -2275,7 +2390,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput2In",
@@ -2292,7 +2408,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput2Off",
@@ -2309,7 +2426,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput2Out",
@@ -2326,7 +2444,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput2Zoom",
@@ -2343,7 +2462,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput3",
@@ -2360,7 +2480,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput3In",
@@ -2377,7 +2498,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput3Off",
@@ -2394,7 +2516,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput3Out",
@@ -2411,7 +2534,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput3Zoom",
@@ -2428,7 +2552,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput4",
@@ -2445,7 +2570,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput4In",
@@ -2462,7 +2588,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput4Off",
@@ -2479,7 +2606,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput4Out",
@@ -2496,7 +2624,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInput4Zoom",
@@ -2513,7 +2642,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "overlay"
     },
     {
       "name": "OverlayInputAllOff",
@@ -2530,7 +2660,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Sswitch all overlays off immediately."
+      "notes": "Switch all overlays off immediately.",
+      "group": "overlay"
     },
     {
       "name": "Pause",
@@ -2547,7 +2678,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "PauseCountdown",
@@ -2564,7 +2696,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Pause or resume countdown. If complete, start from beginning."
+      "notes": "Pause or resume countdown. If complete, start from beginning.",
+      "group": "title"
     },
     {
       "name": "PauseRender",
@@ -2581,7 +2714,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Freeze title input while making updates."
+      "notes": "Freeze title input while making updates.",
+      "group": "title"
     },
     {
       "name": "Play",
@@ -2598,7 +2732,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "PlayPause",
@@ -2615,7 +2750,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "PreviewInput",
@@ -2632,7 +2768,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Send specified input to Preview."
+      "notes": "Send specified input to Preview.",
+      "group": "input"
     },
     {
       "name": "PreviewInputNext",
@@ -2649,7 +2786,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Send next input to Preview."
+      "notes": "Send next input to Preview.",
+      "group": "input"
     },
     {
       "name": "PreviewInputPrevious",
@@ -2666,7 +2804,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Send previous input to Preview."
+      "notes": "Send previous input to Preview.",
+      "group": "input"
     },
     {
       "name": "PreviewOverlayInput1",
@@ -2683,7 +2822,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Preview Overlay1 using the selected input"
+      "notes": "Preview Overlay1 using the selected input",
+      "group": "overlay"
     },
     {
       "name": "PreviewOverlayInput2",
@@ -2700,7 +2840,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Preview Overlay2 using the selected input"
+      "notes": "Preview Overlay2 using the selected input",
+      "group": "overlay"
     },
     {
       "name": "PreviewOverlayInput3",
@@ -2717,7 +2858,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Preview Overlay3  using the selected input"
+      "notes": "Preview Overlay3  using the selected input",
+      "group": "overlay"
     },
     {
       "name": "PreviewOverlayInput4",
@@ -2734,7 +2876,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Preview Overlay4 using the selected input"
+      "notes": "Preview Overlay4 using the selected input",
+      "group": "overlay"
     },
     {
       "name": "PreviousItem",
@@ -2751,7 +2894,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Move to previous item in list"
+      "notes": "Move to previous item in list",
+      "group": "input"
     },
     {
       "name": "PreviousPicture",
@@ -2768,7 +2912,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Move to previous picture for photo and PowerPoint inputs"
+      "notes": "Move to previous picture for photo and PowerPoint inputs",
+      "group": "input"
     },
     {
       "name": "PreviousPlayListEntry",
@@ -2785,7 +2930,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Move to previous Item in a running playList"
+      "notes": "Move to previous Item in a running playList",
+      "group": "playlist"
     },
     {
       "name": "PreviousTitlePreset",
@@ -2802,7 +2948,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "title"
     },
     {
       "name": "PTZCreateVirtualInput",
@@ -2819,7 +2966,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Creates a PTZ virtual input with the current position"
+      "notes": "Creates a PTZ virtual input with the current position",
+      "group": "ptz"
     },
     {
       "name": "PTZFocusAuto",
@@ -2836,7 +2984,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZFocusFar",
@@ -2853,7 +3002,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZFocusManual",
@@ -2870,7 +3020,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZFocusNear",
@@ -2887,7 +3038,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZFocusStop",
@@ -2904,7 +3056,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZHome",
@@ -2921,7 +3074,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveDown",
@@ -2938,7 +3092,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveDownLeft",
@@ -2955,7 +3110,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveDownRight",
@@ -2972,7 +3128,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveLeft",
@@ -2989,7 +3146,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveRight",
@@ -3006,7 +3164,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveStop",
@@ -3023,7 +3182,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Stop all PTZ movement."
+      "notes": "Stop all PTZ movement.",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveToVirtualInputPosition",
@@ -3040,7 +3200,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Moves to the position of the PTZ virtual input without selecting it into Preview."
+      "notes": "Moves to the position of the PTZ virtual input without selecting it into Preview.",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveToVirtualInputPositionByIndex",
@@ -3057,7 +3218,8 @@
       "valueParam4": "",
       "valueExample": "50",
       "selectedNameExample": "",
-      "notes": "Moves to the position of the PTZ virtual input associated with this input. Index is first input found starting from 0."
+      "notes": "Moves to the position of the PTZ virtual input associated with this input. Index is first input found starting from 0.",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveUp",
@@ -3074,7 +3236,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveUpLeft",
@@ -3091,7 +3254,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZMoveUpRight",
@@ -3108,7 +3272,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZUpdateVirtualInput",
@@ -3125,7 +3290,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Update selected PTZ virtual input with current position."
+      "notes": "Update selected PTZ virtual input with current position.",
+      "group": "ptz"
     },
     {
       "name": "PTZZoomIn",
@@ -3142,7 +3308,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZZoomOut",
@@ -3159,7 +3326,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "PTZZoomStop",
@@ -3176,7 +3344,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "ptz"
     },
     {
       "name": "QuickPlay",
@@ -3193,7 +3362,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "transition"
     },
     {
       "name": "RemoveInput",
@@ -3210,24 +3380,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
-    },
-    {
-      "name": "Replay",
-      "hasValue": 0,
-      "hasInput": 0,
-      "hasDuration": 0,
-      "hasSelectedName": 0,
-      "inputNotes": "",
-      "valueParam1": "",
-      "valueParam1Notes": "",
-      "valueParam2": "",
-      "valueParam2Notes": "",
-      "valueParam3": "",
-      "valueParam4": "",
-      "valueExample": "",
-      "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "ReplayACamera1",
@@ -3244,7 +3398,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayACamera2",
@@ -3261,7 +3416,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayACamera3",
@@ -3278,7 +3434,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayACamera4",
@@ -3295,7 +3452,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayBCamera1",
@@ -3312,7 +3470,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayBCamera2",
@@ -3329,7 +3488,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayBCamera3",
@@ -3346,7 +3506,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayBCamera4",
@@ -3363,7 +3524,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayChangeDirection",
@@ -3380,7 +3542,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayChangeSpeed",
@@ -3397,7 +3560,8 @@
       "valueParam4": "",
       "valueExample": "15",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayCopyLastEvent",
@@ -3414,7 +3578,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Specify event from event list index 0-7"
+      "notes": "Specify event from event list index 0-7",
+      "group": "replay"
     },
     {
       "name": "ReplayCopySelectedEvent",
@@ -3431,7 +3596,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Specify event from event list index 0-7"
+      "notes": "Specify event from event list index 0-7",
+      "group": "replay"
     },
     {
       "name": "ReplayExportLastEvent",
@@ -3448,7 +3614,8 @@
       "valueParam4": "",
       "valueExample": "myFolder",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayFastBackward",
@@ -3465,7 +3632,8 @@
       "valueParam4": "",
       "valueExample": "10",
       "selectedNameExample": "",
-      "notes": "1-30x"
+      "notes": "1-30x",
+      "group": "replay"
     },
     {
       "name": "ReplayFastForward",
@@ -3482,7 +3650,8 @@
       "valueParam4": "",
       "valueExample": "10",
       "selectedNameExample": "",
-      "notes": "1-30x"
+      "notes": "1-30x",
+      "group": "replay"
     },
     {
       "name": "ReplayJumpFrames",
@@ -3499,7 +3668,8 @@
       "valueParam4": "",
       "valueExample": "30",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayJumpToNow",
@@ -3516,7 +3686,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayLastEventCameraOff",
@@ -3533,7 +3704,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turns off the specified camera angle (1-4)"
+      "notes": "Turns off the specified camera angle (1-4)",
+      "group": "replay"
     },
     {
       "name": "ReplayLastEventCameraOn",
@@ -3550,7 +3722,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turns on the specified camera angle (1-4)"
+      "notes": "Turns on the specified camera angle (1-4)",
+      "group": "replay"
     },
     {
       "name": "ReplayLastEventSingleCameraOn",
@@ -3567,7 +3740,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turns on only the specified camera angle (1-4)"
+      "notes": "Turns on only the specified camera angle (1-4)",
+      "group": "replay"
     },
     {
       "name": "ReplayLive",
@@ -3584,7 +3758,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayLiveToggle",
@@ -3601,7 +3776,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMarkCancel",
@@ -3618,7 +3794,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMarkIn",
@@ -3635,7 +3812,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMarkInLive",
@@ -3652,7 +3830,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMarkInOut",
@@ -3669,7 +3848,8 @@
       "valueParam4": "",
       "valueExample": "3",
       "selectedNameExample": "",
-      "notes": "Number of previous seconds to use when creating a new event."
+      "notes": "Number of previous seconds to use when creating a new event.",
+      "group": "replay"
     },
     {
       "name": "ReplayMarkInOutLive",
@@ -3686,7 +3866,8 @@
       "valueParam4": "",
       "valueExample": "3",
       "selectedNameExample": "",
-      "notes": "Number of previous seconds to use when creating a new event."
+      "notes": "Number of previous seconds to use when creating a new event.",
+      "group": "replay"
     },
     {
       "name": "ReplayMarkInOutRecorded",
@@ -3703,7 +3884,8 @@
       "valueParam4": "",
       "valueExample": "3",
       "selectedNameExample": "",
-      "notes": "Number of previous seconds to use when creating a new event."
+      "notes": "Number of previous seconds to use when creating a new event.",
+      "group": "replay"
     },
     {
       "name": "ReplayMarkInRecorded",
@@ -3720,7 +3902,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMarkInRecordedNow",
@@ -3737,7 +3920,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMarkOut",
@@ -3754,7 +3938,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMoveLastEvent",
@@ -3771,7 +3956,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Specify event from event list index 0-7"
+      "notes": "Specify event from event list index 0-7",
+      "group": "replay"
     },
     {
       "name": "ReplayMoveSelectedEvent",
@@ -3788,7 +3974,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Specify event from event list index 0-7"
+      "notes": "Specify event from event list index 0-7",
+      "group": "replay"
     },
     {
       "name": "ReplayMoveSelectedEventDown",
@@ -3805,7 +3992,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMoveSelectedEventUp",
@@ -3822,7 +4010,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMoveSelectedInPoint",
@@ -3839,7 +4028,8 @@
       "valueParam4": "",
       "valueExample": "20",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayMoveSelectedOutPoint",
@@ -3856,7 +4046,8 @@
       "valueParam4": "",
       "valueExample": "20",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPause",
@@ -3873,7 +4064,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlay",
@@ -3890,7 +4082,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayAllEvents",
@@ -3907,7 +4100,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Play all events in active list"
+      "notes": "Play all events in active list",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayAllEventsToOutput",
@@ -3924,7 +4118,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Play all events in active list"
+      "notes": "Play all events in active list",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayBackward",
@@ -3941,7 +4136,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayEvent",
@@ -3958,7 +4154,8 @@
       "valueParam4": "",
       "valueExample": "5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayEventsByID",
@@ -3975,7 +4172,8 @@
       "valueParam4": "",
       "valueExample": "2,3,4",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayEventsByIDToOutput",
@@ -3992,7 +4190,8 @@
       "valueParam4": "",
       "valueExample": "2,3,4",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayEventToOutput",
@@ -4009,7 +4208,8 @@
       "valueParam4": "",
       "valueExample": "5",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayForward",
@@ -4026,7 +4226,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayLastEvent",
@@ -4043,7 +4244,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayLastEventToOutput",
@@ -4060,7 +4262,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayNext",
@@ -4077,7 +4280,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayPause",
@@ -4094,7 +4298,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlayPrevious",
@@ -4111,7 +4316,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlaySelectedEvent",
@@ -4128,7 +4334,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayPlaySelectedEventToOutput",
@@ -4145,7 +4352,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayRecorded",
@@ -4162,7 +4370,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectedEventCameraOff",
@@ -4179,7 +4388,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turns off the specified camera angle (1-4)"
+      "notes": "Turns off the specified camera angle (1-4)",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectedEventCameraOn",
@@ -4196,7 +4406,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turns on the specified camera angle (1-4)"
+      "notes": "Turns on the specified camera angle (1-4)",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectedEventSingleCameraOn",
@@ -4213,7 +4424,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Turns on only the specified camera angle (1-4)"
+      "notes": "Turns on only the specified camera angle (1-4)",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectEvents1",
@@ -4230,7 +4442,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectEvents2",
@@ -4247,7 +4460,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectEvents3",
@@ -4264,7 +4478,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectEvents4",
@@ -4281,7 +4496,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectEvents5",
@@ -4298,7 +4514,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectEvents6",
@@ -4315,7 +4532,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectEvents7",
@@ -4332,7 +4550,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectEvents8",
@@ -4349,7 +4568,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectFirstEvent",
@@ -4366,7 +4586,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectLastEvent",
@@ -4383,7 +4604,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectNextEvent",
@@ -4400,7 +4622,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySelectPreviousEvent",
@@ -4417,7 +4640,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySetDirectionBackward",
@@ -4434,7 +4658,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySetDirectionForward",
@@ -4451,7 +4676,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySetLastEventText",
@@ -4468,7 +4694,8 @@
       "valueParam4": "",
       "valueExample": "MyText",
       "selectedNameExample": "",
-      "notes": "Value = Text"
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySetLastEventTextCamera",
@@ -4485,7 +4712,8 @@
       "valueParam4": "",
       "valueExample": "1,MyText",
       "selectedNameExample": "",
-      "notes": "Changes the text of the specified angle (1-4), example: 3,angle3text"
+      "notes": "Changes the text of the specified angle (1-4), example: 3,angle3text",
+      "group": "replay"
     },
     {
       "name": "ReplaySetSelectedEventText",
@@ -4502,7 +4730,8 @@
       "valueParam4": "",
       "valueExample": "MyText",
       "selectedNameExample": "",
-      "notes": "Value = Text"
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplaySetSelectedEventTextCamera",
@@ -4519,7 +4748,8 @@
       "valueParam4": "",
       "valueExample": "1,MyText",
       "selectedNameExample": "",
-      "notes": "Changes the text of the specified angle (1-4), example: 3,angle3text"
+      "notes": "Changes the text of the specified angle (1-4), example: 3,angle3text",
+      "group": "replay"
     },
     {
       "name": "ReplaySetSpeed",
@@ -4536,7 +4766,8 @@
       "valueParam4": "",
       "valueExample": "0.5",
       "selectedNameExample": "",
-      "notes": "See SetRateSlowMotion"
+      "notes": "See SetRateSlowMotion",
+      "group": "replay"
     },
     {
       "name": "ReplayShowHide",
@@ -4553,7 +4784,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayStartRecording",
@@ -4570,7 +4802,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayStopEvents",
@@ -4587,7 +4820,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayStopRecording",
@@ -4604,7 +4838,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayToggleLastEventCamera1",
@@ -4621,7 +4856,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayToggleLastEventCamera2",
@@ -4638,7 +4874,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayToggleLastEventCamera3",
@@ -4655,7 +4892,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayToggleLastEventCamera4",
@@ -4672,7 +4910,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayToggleSelectedEventCamera1",
@@ -4689,7 +4928,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayToggleSelectedEventCamera2",
@@ -4706,7 +4946,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayToggleSelectedEventCamera3",
@@ -4723,7 +4964,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayToggleSelectedEventCamera4",
@@ -4740,7 +4982,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "replay"
     },
     {
       "name": "ReplayUpdateSelectedInPoint",
@@ -4757,7 +5000,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Update In point of Selected Event to current Position."
+      "notes": "Update the in point of specified event to current playhead position.",
+      "group": "replay"
     },
     {
       "name": "ReplayUpdateSelectedOutPoint",
@@ -4774,7 +5018,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Update Mark Out point of Selected Event to current Position."
+      "notes": "Update the out point of specified event to current playhead position.",
+      "group": "replay"
     },
     {
       "name": "ResetInput",
@@ -4791,7 +5036,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "Restart",
@@ -4808,7 +5054,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Restart selected Input"
+      "notes": "Restart selected Input",
+      "group": "input"
     },
     {
       "name": "ResumeRender",
@@ -4825,7 +5072,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Resume Title Input rendering after making multiple updates"
+      "notes": "Resume Title Input rendering after making multiple updates",
+      "group": "title"
     },
     {
       "name": "SavePreset",
@@ -4842,7 +5090,8 @@
       "valueParam4": "",
       "valueExample": "myPresetFile.vmix",
       "selectedNameExample": "",
-      "notes": "Save preset to the specified Filename."
+      "notes": "Save preset to the specified Filename.",
+      "group": "preset"
     },
     {
       "name": "SaveVideoDelay",
@@ -4859,7 +5108,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Save video clip from Video Delay according to Duration in milliseconds"
+      "notes": "Save video clip from Video Delay according to Duration in milliseconds",
+      "group": "input"
     },
     {
       "name": "ScriptStart",
@@ -4876,7 +5126,8 @@
       "valueParam4": "",
       "valueExample": "MyScript01",
       "selectedNameExample": "",
-      "notes": "Value = Script Name"
+      "notes": "",
+      "group": "scripting"
     },
     {
       "name": "ScriptStartDynamic",
@@ -4893,7 +5144,8 @@
       "valueParam4": "",
       "valueExample": "Input.Find(\"My title 01\").Text(\"Headline\") = \"Hello World!\"",
       "selectedNameExample": "",
-      "notes": "Start a dynamic script by passing code as the value."
+      "notes": "Start a dynamic script by passing code as the value.",
+      "group": "scripting"
     },
     {
       "name": "ScriptStop",
@@ -4910,7 +5162,8 @@
       "valueParam4": "",
       "valueExample": "MyScript01",
       "selectedNameExample": "",
-      "notes": "Value = Script Name"
+      "notes": "",
+      "group": "scripting"
     },
     {
       "name": "ScriptStopAll",
@@ -4927,7 +5180,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "scripting"
     },
     {
       "name": "ScriptStopDynamic",
@@ -4944,7 +5198,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "scripting"
     },
     {
       "name": "SelectCategory",
@@ -4961,7 +5216,8 @@
       "valueParam4": "",
       "valueExample": "Red",
       "selectedNameExample": "",
-      "notes": "Change to Category according to Value (All,Red,Green,Orange,Purple,Aqua,Blue)"
+      "notes": "Change to Category according to Value (All,Red,Green,Orange,Purple,Aqua,Blue)",
+      "group": "input"
     },
     {
       "name": "SelectIndex",
@@ -4978,7 +5234,8 @@
       "valueParam4": "",
       "valueExample": "3",
       "selectedNameExample": "",
-      "notes": "Photos,List: Selects item in List according to Value starting from number 1\nVirtual Set: Zooms to selected preset using the current speed settings"
+      "notes": "Photos,List: Selects item in List according to Value starting from number 1\n\nVirtual Set: Zooms to selected preset using the current speed settings",
+      "group": "input"
     },
     {
       "name": "SelectPlayList",
@@ -4995,7 +5252,8 @@
       "valueParam4": "",
       "valueExample": "MyPlaylist01",
       "selectedNameExample": "",
-      "notes": "Open PlayList with Name matching Value"
+      "notes": "Open playList with specified name",
+      "group": "playlist"
     },
     {
       "name": "SelectTitlePreset",
@@ -5012,7 +5270,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Value = Preset Index"
+      "notes": "",
+      "group": "title"
     },
     {
       "name": "SendKeys",
@@ -5029,7 +5288,8 @@
       "valueParam4": "",
       "valueExample": "abc",
       "selectedNameExample": "",
-      "notes": "Send keys to active window"
+      "notes": "Send keys to active window",
+      "group": "general"
     },
     {
       "name": "SetAlpha",
@@ -5046,7 +5306,8 @@
       "valueParam4": "",
       "valueExample": "128",
       "selectedNameExample": "",
-      "notes": "Set Input transparency according to Value. 0 is transparent, 255 is opaque"
+      "notes": "Set Input transparency according to Value. 0 is transparent, 255 is opaque",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetBalance",
@@ -5063,7 +5324,8 @@
       "valueParam4": "",
       "valueExample": "-0.2",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SetBusAVolume",
@@ -5080,7 +5342,8 @@
       "valueParam4": "",
       "valueExample": "67",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SetBusBVolume",
@@ -5097,7 +5360,8 @@
       "valueParam4": "",
       "valueExample": "68",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SetBusCVolume",
@@ -5114,7 +5378,8 @@
       "valueParam4": "",
       "valueExample": "69",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SetBusDVolume",
@@ -5131,7 +5396,8 @@
       "valueParam4": "",
       "valueExample": "70",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SetBusEVolume",
@@ -5148,7 +5414,8 @@
       "valueParam4": "",
       "valueExample": "71",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SetBusFVolume",
@@ -5165,7 +5432,8 @@
       "valueParam4": "",
       "valueExample": "72",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SetBusGVolume",
@@ -5182,7 +5450,8 @@
       "valueParam4": "",
       "valueExample": "73",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SetCCGainB",
@@ -5199,7 +5468,8 @@
       "valueParam4": "",
       "valueExample": "1.2",
       "selectedNameExample": "",
-      "notes": "Change Gain R level of Input."
+      "notes": "Change Gain R level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCGainG",
@@ -5216,7 +5486,8 @@
       "valueParam4": "",
       "valueExample": "1.2",
       "selectedNameExample": "",
-      "notes": "Change Gain R level of Input."
+      "notes": "Change Gain R level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCGainR",
@@ -5233,7 +5504,8 @@
       "valueParam4": "",
       "valueExample": "1.2",
       "selectedNameExample": "",
-      "notes": "Change Gain R level of Input."
+      "notes": "Change Gain R level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCGainRGB",
@@ -5250,7 +5522,8 @@
       "valueParam4": "",
       "valueExample": "1.2",
       "selectedNameExample": "",
-      "notes": "Change Gain RGB level of Input."
+      "notes": "Change Gain RGB level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCGammaB",
@@ -5267,7 +5540,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Gamma B level of Input."
+      "notes": "Change Gamma B level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCGammaG",
@@ -5284,7 +5558,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Gamma G level of Input."
+      "notes": "Change Gamma G level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCGammaR",
@@ -5301,7 +5576,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Gamma R level of Input."
+      "notes": "Change Gamma R level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCGammaRGB",
@@ -5318,7 +5594,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Gamma RGB level of Input."
+      "notes": "Change Gamma RGB level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCHue",
@@ -5335,7 +5612,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Hue level of Input."
+      "notes": "Change Hue level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCLiftB",
@@ -5352,7 +5630,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Lift B level of Input."
+      "notes": "Change Lift B level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCLiftG",
@@ -5369,7 +5648,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Lift G level of Input."
+      "notes": "Change Lift G level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCLiftR",
@@ -5386,7 +5666,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Lift R level of Input."
+      "notes": "Change Lift R level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCLiftRGB",
@@ -5403,7 +5684,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Lift RGB level of Input."
+      "notes": "Change Lift RGB level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCCSaturation",
@@ -5420,7 +5702,8 @@
       "valueParam4": "",
       "valueExample": "-0.8",
       "selectedNameExample": "",
-      "notes": "Change Saturation level of Input."
+      "notes": "Change Saturation level of Input.",
+      "group": "colourCorrrection"
     },
     {
       "name": "SetCountdown",
@@ -5437,7 +5720,8 @@
       "valueParam4": "",
       "valueExample": "01:30:30",
       "selectedNameExample": "",
-      "notes": "Set countdown duration according to Value as hh:mm:ss (00:00:00)"
+      "notes": "Set countdown duration according to Value as hh:mm:ss (00:00:00)",
+      "group": "title"
     },
     {
       "name": "SetFader",
@@ -5454,7 +5738,8 @@
       "valueParam4": "",
       "valueExample": "220",
       "selectedNameExample": "",
-      "notes": "Set master fader t-bar position (range 0-255). Setting to 255 will cut to preview"
+      "notes": "Set master fader t-bar position (range 0-255). Setting to 255 will cut to preview",
+      "group": "transition"
     },
     {
       "name": "SetGain",
@@ -5471,7 +5756,8 @@
       "valueParam4": "",
       "valueExample": "10",
       "selectedNameExample": "",
-      "notes": "Value = Gain dB 0-24"
+      "notes": "Value = Gain dB 0-24",
+      "group": "audio"
     },
     {
       "name": "SetGainChannel1",
@@ -5488,7 +5774,8 @@
       "valueParam4": "",
       "valueExample": "10",
       "selectedNameExample": "",
-      "notes": "Value = Gain dB 0-24"
+      "notes": "Value = Gain dB 0-24",
+      "group": "audio"
     },
     {
       "name": "SetGainChannel2",
@@ -5505,7 +5792,8 @@
       "valueParam4": "",
       "valueExample": "10",
       "selectedNameExample": "",
-      "notes": "Value = Gain dB 0-24"
+      "notes": "Value = Gain dB 0-24",
+      "group": "audio"
     },
     {
       "name": "SetHeadphonesVolume",
@@ -5522,7 +5810,8 @@
       "valueParam4": "",
       "valueExample": "67",
       "selectedNameExample": "",
-      "notes": "Value = Volume 0-100"
+      "notes": "Value = Volume 0-100",
+      "group": "audio"
     },
     {
       "name": "SetImage",
@@ -5539,7 +5828,8 @@
       "valueParam4": "",
       "valueExample": "myfile.jpg",
       "selectedNameExample": "",
-      "notes": "Change Image in Title according to Filename or empty to clear."
+      "notes": "Change Image in Title according to Filename or empty to clear.",
+      "group": "title"
     },
     {
       "name": "SetImageVisible",
@@ -5556,7 +5846,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "Image01.Source",
-      "notes": "Toggle image visibility in title. Use SelectedName or SelectedIndex to specify which image to modify."
+      "notes": "Toggle image visibility in title. Use SelectedName or SelectedIndex to specify which image to modify.",
+      "group": "title"
     },
     {
       "name": "SetImageVisibleOff",
@@ -5573,7 +5864,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "Image01.Source",
-      "notes": "Hide Image in title. Use SelectedName or SelectedIndex to specify which image to modify."
+      "notes": "Hide Image in title. Use SelectedName or SelectedIndex to specify which image to modify.",
+      "group": "title"
     },
     {
       "name": "SetImageVisibleOn",
@@ -5590,7 +5882,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "Image01.Source",
-      "notes": "Show image in title. Use SelectedName or SelectedIndex to specify which image to modify."
+      "notes": "Show image in title. Use SelectedName or SelectedIndex to specify which image to modify.",
+      "group": "title"
     },
     {
       "name": "SetInputName",
@@ -5607,7 +5900,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Set the Display Name of the Input"
+      "notes": "Set the Display Name of the Input",
+      "group": "input"
     },
     {
       "name": "SetMasterVolume",
@@ -5624,7 +5918,8 @@
       "valueParam4": "",
       "valueExample": "67",
       "selectedNameExample": "",
-      "notes": "Value = Volume 0-100"
+      "notes": "Value = Volume 0-100",
+      "group": "audio"
     },
     {
       "name": "SetMultiViewOverlay",
@@ -5634,14 +5929,15 @@
       "hasSelectedName": 0,
       "inputNotes": "",
       "valueParam1": "overlayIndex",
-      "valueParam1Notes": "1-10",
+      "valueParam1Notes": "Target multiview layer - range 1-10",
       "valueParam2": "overlaySource",
-      "valueParam2Notes": "Input name or number",
+      "valueParam2Notes": "Input name, number or GUID",
       "valueParam3": "",
       "valueParam4": "",
       "valueExample": "1,My new overlay source input",
       "selectedNameExample": "",
-      "notes": "Change Overlay in Input MultiView according to Value parameter."
+      "notes": "Change a single multiview window source on a specified input.",
+      "group": "overlay"
     },
     {
       "name": "SetOutput2",
@@ -5658,7 +5954,8 @@
       "valueParam4": "input",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Change what is displayed on Output 2."
+      "notes": "Change what is displayed on Output 2.",
+      "group": "output"
     },
     {
       "name": "SetOutput3",
@@ -5675,7 +5972,8 @@
       "valueParam4": "input",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Change what is displayed on Output 3."
+      "notes": "Change what is displayed on Output 3.",
+      "group": "output"
     },
     {
       "name": "SetOutput4",
@@ -5692,7 +5990,8 @@
       "valueParam4": "input",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Change what is displayed on Output 4."
+      "notes": "Change what is displayed on Output 4.",
+      "group": "output"
     },
     {
       "name": "SetOutputExternal2",
@@ -5709,7 +6008,8 @@
       "valueParam4": "input",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Change what is displayed on the External2 output."
+      "notes": "Change what is displayed on the External2 output.",
+      "group": "output"
     },
     {
       "name": "SetOutputFullscreen",
@@ -5726,7 +6026,8 @@
       "valueParam4": "input",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Change what is displayed on the Fullscreen output."
+      "notes": "Change what is displayed on the Fullscreen output.",
+      "group": "output"
     },
     {
       "name": "SetOutputFullscreen2",
@@ -5743,7 +6044,8 @@
       "valueParam4": "input",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Change what is displayed on the Fullscreen2 output."
+      "notes": "Change what is displayed on the Fullscreen2 output.",
+      "group": "output"
     },
     {
       "name": "SetPanX",
@@ -5760,7 +6062,8 @@
       "valueParam4": "",
       "valueExample": "-1",
       "selectedNameExample": "",
-      "notes": "Change current PanX value of Input."
+      "notes": "Change pan X value of specified input.",
+      "group": "input"
     },
     {
       "name": "SetPanY",
@@ -5777,7 +6080,8 @@
       "valueParam4": "",
       "valueExample": "-1",
       "selectedNameExample": "",
-      "notes": "Change current PanY value of Input."
+      "notes": "Change pan Y value of specified input.",
+      "group": "input"
     },
     {
       "name": "SetPictureEffect",
@@ -5794,7 +6098,8 @@
       "valueParam4": "",
       "valueExample": "Fade",
       "selectedNameExample": "",
-      "notes": "Set transition effect for Photos and PowerPoint Inputs (Fade, Zoom, etc)"
+      "notes": "Set transition effect for Photos and PowerPoint Inputs (Fade, Zoom, etc)",
+      "group": "input"
     },
     {
       "name": "SetPictureEffectDuration",
@@ -5811,7 +6116,8 @@
       "valueParam4": "",
       "valueExample": "1000",
       "selectedNameExample": "",
-      "notes": "Set duration of transition effect in Milliseconds"
+      "notes": "Set duration of transition effect in milliseconds",
+      "group": "input"
     },
     {
       "name": "SetPictureTransition",
@@ -5828,7 +6134,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Set transition time between Photos and PowerPoint slides in Seconds"
+      "notes": "Set transition time between photos and PowerPoint slides (in seconds)",
+      "group": "input"
     },
     {
       "name": "SetPosition",
@@ -5845,7 +6152,8 @@
       "valueParam4": "",
       "valueExample": "500",
       "selectedNameExample": "",
-      "notes": "Set Position of selected Input according to Value in Milliseconds"
+      "notes": "Set position transition speed of specified input in milliseconds",
+      "group": "input"
     },
     {
       "name": "SetRate",
@@ -5862,7 +6170,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Set Playback speed/rate for Videos and Video Delays"
+      "notes": "Set playback speed/rate for videos and video delays",
+      "group": "input"
     },
     {
       "name": "SetRateSlowMotion",
@@ -5879,7 +6188,8 @@
       "valueParam4": "",
       "valueExample": "0.2",
       "selectedNameExample": "",
-      "notes": "Set Slow Motion speed for Instant Replay"
+      "notes": "Set slow motion speed for instant replay",
+      "group": "input"
     },
     {
       "name": "SetText",
@@ -5896,7 +6206,8 @@
       "valueParam4": "",
       "valueExample": "My new text",
       "selectedNameExample": "myTitle.Text",
-      "notes": "Change text in title to [value]. Use SelectedName or SelectedIndex to specify which text field to modify."
+      "notes": "Change text in title to [value]. Use SelectedName or SelectedIndex to specify which text field to modify.",
+      "group": "title"
     },
     {
       "name": "SetTextColour",
@@ -5913,7 +6224,8 @@
       "valueParam4": "",
       "valueExample": "#FF0000",
       "selectedNameExample": "myTitle.Text",
-      "notes": "Change colour of text in title using HTML format (#xxxxxx). Use SelectedName or SelectedIndex to specify which text field to modify."
+      "notes": "Change colour of text in title using HTML format (#xxxxxx). Use SelectedName or SelectedIndex to specify which text field to modify.",
+      "group": "title"
     },
     {
       "name": "SetTextVisible",
@@ -5930,7 +6242,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "myTitle.Text",
-      "notes": "Toggle text visibility in title input. Use SelectedName or SelectedIndex to specify which text field to modify."
+      "notes": "Toggle text visibility in title input. Use SelectedName or SelectedIndex to specify which text field to modify.",
+      "group": "title"
     },
     {
       "name": "SetTextVisibleOff",
@@ -5947,7 +6260,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "myTitle.Text",
-      "notes": "Hide text in a title input. Use SelectedName or SelectedIndex to specify which text field to modify."
+      "notes": "Hide text in a title input. Use SelectedName or SelectedIndex to specify which text field to modify.",
+      "group": "title"
     },
     {
       "name": "SetTextVisibleOn",
@@ -5964,7 +6278,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "myTitle.Text",
-      "notes": "Show text in title input. Use SelectedName or SelectedIndex to specify which text field to modify."
+      "notes": "Show text in title input. Use SelectedName or SelectedIndex to specify which text field to modify.",
+      "group": "title"
     },
     {
       "name": "SetTickerSpeed",
@@ -5981,7 +6296,8 @@
       "valueParam4": "",
       "valueExample": "666",
       "selectedNameExample": "",
-      "notes": "Change ticker speed."
+      "notes": "Change ticker speed.",
+      "group": "title"
     },
     {
       "name": "SetTransitionDuration1",
@@ -5998,7 +6314,8 @@
       "valueParam4": "",
       "valueExample": "500",
       "selectedNameExample": "",
-      "notes": "Change Transition Duration for Button 1"
+      "notes": "Change Transition Duration for Button 1",
+      "group": "transition"
     },
     {
       "name": "SetTransitionDuration2",
@@ -6015,7 +6332,8 @@
       "valueParam4": "",
       "valueExample": "500",
       "selectedNameExample": "",
-      "notes": "Change Transition Duration for Button 2"
+      "notes": "Change Transition Duration for Button 2",
+      "group": "transition"
     },
     {
       "name": "SetTransitionDuration3",
@@ -6032,7 +6350,8 @@
       "valueParam4": "",
       "valueExample": "500",
       "selectedNameExample": "",
-      "notes": "Change Transition Duration for Button 3"
+      "notes": "Change Transition Duration for Button 3",
+      "group": "transition"
     },
     {
       "name": "SetTransitionDuration4",
@@ -6049,7 +6368,8 @@
       "valueParam4": "",
       "valueExample": "500",
       "selectedNameExample": "",
-      "notes": "Change Transition Duration for Button 4"
+      "notes": "Change Transition Duration for Button 4",
+      "group": "transition"
     },
     {
       "name": "SetTransitionEffect1",
@@ -6066,7 +6386,8 @@
       "valueParam4": "",
       "valueExample": "Fade",
       "selectedNameExample": "",
-      "notes": "Change Transition for Button 1"
+      "notes": "Change Transition for Button 1",
+      "group": "transition"
     },
     {
       "name": "SetTransitionEffect2",
@@ -6083,7 +6404,8 @@
       "valueParam4": "",
       "valueExample": "Fade",
       "selectedNameExample": "",
-      "notes": "Change Transition for Button 2"
+      "notes": "Change Transition for Button 2",
+      "group": "transition"
     },
     {
       "name": "SetTransitionEffect3",
@@ -6100,7 +6422,8 @@
       "valueParam4": "",
       "valueExample": "Fade",
       "selectedNameExample": "",
-      "notes": "Change Transition for Button 3"
+      "notes": "Change Transition for Button 3",
+      "group": "transition"
     },
     {
       "name": "SetTransitionEffect4",
@@ -6117,7 +6440,8 @@
       "valueParam4": "",
       "valueExample": "Fade",
       "selectedNameExample": "",
-      "notes": "Change Transition for Button 4"
+      "notes": "Change Transition for Button 4",
+      "group": "transition"
     },
     {
       "name": "SetVolume",
@@ -6134,7 +6458,8 @@
       "valueParam4": "",
       "valueExample": "67",
       "selectedNameExample": "0-100",
-      "notes": "Value = Volume 0-100"
+      "notes": "Value = Volume 0-100",
+      "group": "audio"
     },
     {
       "name": "SetVolumeChannel1",
@@ -6151,7 +6476,8 @@
       "valueParam4": "",
       "valueExample": "67",
       "selectedNameExample": "0-100",
-      "notes": "When using SeparateMono on an Audio Input, this can be used to set channel volumes independently."
+      "notes": "When using SeparateMono on an Audio Input, this can be used to set channel volumes independently.",
+      "group": "audio"
     },
     {
       "name": "SetVolumeChannel2",
@@ -6168,7 +6494,8 @@
       "valueParam4": "",
       "valueExample": "67",
       "selectedNameExample": "0-100",
-      "notes": "When using SeparateMono on an Audio Input, this can be used to set channel volumes independently."
+      "notes": "When using SeparateMono on an Audio Input, this can be used to set channel volumes independently.",
+      "group": "audio"
     },
     {
       "name": "SetVolumeChannelMixer",
@@ -6185,7 +6512,8 @@
       "valueParam4": "",
       "valueExample": "67",
       "selectedNameExample": "0-100",
-      "notes": "Set Volume of an Input's sub channel (1 to 16)"
+      "notes": "Set Volume of an Input's sub channel (1 to 16)",
+      "group": "audio"
     },
     {
       "name": "SetVolumeFade",
@@ -6202,7 +6530,8 @@
       "valueParam4": "",
       "valueExample": "50,500",
       "selectedNameExample": "",
-      "notes": "Set volume gradually over x milliseconds."
+      "notes": "Set volume gradually over x milliseconds.",
+      "group": "audio"
     },
     {
       "name": "SetZoom",
@@ -6219,7 +6548,8 @@
       "valueParam4": "",
       "valueExample": "2",
       "selectedNameExample": "",
-      "notes": "Change current Zoom level of Input."
+      "notes": "Change current zoom level of specified input.",
+      "group": "input"
     },
     {
       "name": "SharpenOff",
@@ -6236,7 +6566,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "SharpenOn",
@@ -6253,7 +6584,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "input"
     },
     {
       "name": "Snapshot",
@@ -6270,7 +6602,8 @@
       "valueParam4": "",
       "valueExample": "mysnapshot {0:dd MMM yyyy}.jpg",
       "selectedNameExample": "",
-      "notes": "Create a snapshot image of the current Output. Optional Value specifies save Filename, otherwise a save file window will appear. Filename can specify date, for example mysnapshot {0:dd MMM yyyy}.jpg"
+      "notes": "Create a snapshot image of the current Output. Optional Value specifies save Filename, otherwise a save file window will appear. Filename can specify date, for example mysnapshot {0:dd MMM yyyy}.jpg",
+      "group": "output"
     },
     {
       "name": "SnapshotInput",
@@ -6287,7 +6620,8 @@
       "valueParam4": "",
       "valueExample": "mysnapshot {0:dd MMM yyyy}.jpg",
       "selectedNameExample": "",
-      "notes": "Create a snapshot image of the selected Input. Optional Value specifies save Filename, otherwise a save file window will appear. Filename can specify date, for example mysnapshot {0:dd MMM yyyy}.jpg"
+      "notes": "Create a snapshot image of the selected Input. Optional Value specifies save Filename, otherwise a save file window will appear. Filename can specify date, for example mysnapshot {0:dd MMM yyyy}.jpg",
+      "group": "output"
     },
     {
       "name": "Solo",
@@ -6304,7 +6638,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SoloOff",
@@ -6321,7 +6656,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "SoloOn",
@@ -6338,7 +6674,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "audio"
     },
     {
       "name": "StartCountdown",
@@ -6355,7 +6692,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "title"
     },
     {
       "name": "StartExternal",
@@ -6372,7 +6710,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "StartMultiCorder",
@@ -6389,7 +6728,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "StartPlayList",
@@ -6406,7 +6746,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "playlist"
     },
     {
       "name": "StartRecording",
@@ -6423,7 +6764,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "StartStopExternal",
@@ -6440,7 +6782,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "StartStopMultiCorder",
@@ -6457,7 +6800,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "StartStopRecording",
@@ -6474,7 +6818,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "StartStopStreaming",
@@ -6491,7 +6836,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Optional stream number starting from 0. Leave blank to control all streams."
+      "notes": "Optional stream number starting from 0. Leave blank to control all streams.",
+      "group": "output"
     },
     {
       "name": "StartStreaming",
@@ -6508,7 +6854,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Optional stream number starting from 0. Leave blank to control all streams."
+      "notes": "Optional stream number starting from 0. Leave blank to control all streams.",
+      "group": "output"
     },
     {
       "name": "Stinger1",
@@ -6525,7 +6872,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "transition"
     },
     {
       "name": "Stinger2",
@@ -6542,7 +6890,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "transition"
     },
     {
       "name": "StopCountdown",
@@ -6559,7 +6908,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Stop and Reset Countdown"
+      "notes": "Stop and Reset Countdown",
+      "group": "title"
     },
     {
       "name": "StopExternal",
@@ -6576,7 +6926,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "StopMultiCorder",
@@ -6593,7 +6944,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "StopPlayList",
@@ -6610,7 +6962,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "playlist"
     },
     {
       "name": "StopRecording",
@@ -6627,7 +6980,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "output"
     },
     {
       "name": "StopStreaming",
@@ -6644,7 +6998,8 @@
       "valueParam4": "",
       "valueExample": "1",
       "selectedNameExample": "",
-      "notes": "Optional stream number starting from 0. Leave blank to control all streams."
+      "notes": "Optional stream number starting from 0. Leave blank to control all streams.",
+      "group": "output"
     },
     {
       "name": "StreamingSetKey",
@@ -6661,7 +7016,8 @@
       "valueParam4": "",
       "valueExample": "0,myStreamKey",
       "selectedNameExample": "",
-      "notes": "Set Key on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,mystreamkey"
+      "notes": "Set Key on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,mystreamkey",
+      "group": "output"
     },
     {
       "name": "StreamingSetPassword",
@@ -6678,7 +7034,8 @@
       "valueParam4": "",
       "valueExample": "0,myStreamPassword",
       "selectedNameExample": "",
-      "notes": "Set Password on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,password"
+      "notes": "Set Password on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,password",
+      "group": "output"
     },
     {
       "name": "StreamingSetURL",
@@ -6695,7 +7052,8 @@
       "valueParam4": "",
       "valueExample": "0,rtmp://myurl.com/",
       "selectedNameExample": "",
-      "notes": "Set URL on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,rtmp://myurl/"
+      "notes": "Set URL on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,rtmp://myurl/",
+      "group": "output"
     },
     {
       "name": "StreamingSetUsername",
@@ -6712,7 +7070,8 @@
       "valueParam4": "",
       "valueExample": "0,myStreamUsername",
       "selectedNameExample": "",
-      "notes": "Set Username on Custom RTMP Stream. Optional stream number starting from 0 at start followed by comma, e.g 0,username"
+      "notes": "Set username on custom RTMP stream. Optional stream number starting from 0 at start followed by comma, e.g 0,username.",
+      "group": "output"
     },
     {
       "name": "SuspendCountdown",
@@ -6729,7 +7088,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Pause Countdown Only"
+      "notes": "Pause countdown.",
+      "group": "title"
     },
     {
       "name": "TitleBeginAnimation",
@@ -6746,7 +7106,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "",
+      "group": "title"
     },
     {
       "name": "Transition1",
@@ -6763,7 +7124,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Clicks one of the four Transition buttons in the main vMix window."
+      "notes": "Clicks the first transition button in the main vMix window.",
+      "group": "transition"
     },
     {
       "name": "Transition2",
@@ -6780,7 +7142,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "Clicks the second transition button in the main vMix window.",
+      "group": "transition"
     },
     {
       "name": "Transition3",
@@ -6797,7 +7160,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "Clicks the third transition button in the main vMix window.",
+      "group": "transition"
     },
     {
       "name": "Transition4",
@@ -6814,7 +7178,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": ""
+      "notes": "Clicks the fourth transition button in the main vMix window.",
+      "group": "transition"
     },
     {
       "name": "VideoCallAudioSource",
@@ -6831,7 +7196,8 @@
       "valueParam4": "",
       "valueExample": "Master",
       "selectedNameExample": "",
-      "notes": "Master,Headphones,BusA,BusB,BusC,BusD,BusE,BusF,BusG"
+      "notes": "Master,Headphones,BusA,BusB,BusC,BusD,BusE,BusF,BusG",
+      "group": "videoCalls"
     },
     {
       "name": "VideoCallVideoSource",
@@ -6848,7 +7214,8 @@
       "valueParam4": "",
       "valueExample": "Output1",
       "selectedNameExample": "",
-      "notes": "Output1,Output2,Output3,Output4"
+      "notes": "Output1,Output2,Output3,Output4",
+      "group": "videoCalls"
     },
     {
       "name": "VideoDelayStartRecording",
@@ -6865,7 +7232,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Start Video Delay Recording"
+      "notes": "Start video delay recording",
+      "group": "input"
     },
     {
       "name": "VideoDelayStartStopRecording",
@@ -6882,7 +7250,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Toggle Video Delay Recording"
+      "notes": "Toggle video delay recording",
+      "group": "input"
     },
     {
       "name": "VideoDelayStopRecording",
@@ -6899,7 +7268,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Stop Video Delay Recording"
+      "notes": "Stop video delay recording",
+      "group": "input"
     },
     {
       "name": "WaitForCompletion",
@@ -6916,7 +7286,8 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Wait for a Video Input to reach the end of playback."
+      "notes": "Wait for a video input to reach the end of playback.",
+      "group": "input"
     },
     {
       "name": "WriteDurationToRecordingLog",
@@ -6933,6 +7304,7 @@
       "valueParam4": "",
       "valueExample": "MyLogMessageTag",
       "selectedNameExample": "",
-      "notes": "Write current recording duration to log file with optional tag text Value."
+      "notes": "Write current recording duration to log file with optional tag text Value.",
+      "group": "output"
     }
    ]
