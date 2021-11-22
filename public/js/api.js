@@ -95,7 +95,7 @@ const vMixApi = {
                     <tr><td>Duration</td><td>${item.hasDuration ? "Yes" : "No"}</td></tr>
                     <tr><td>SelectedName</td><td>${item.hasSelectedName ? "Yes" : "No"}</td></tr>
                 </table>`;
-        if (item.valueParam1.concat(item.valueParam2) != "") {
+        if (item.valueParam1Notes.concat(item.valueParam2Notes) != "") {
             html += `
             <table class='table'>
                     <tr><th>Value parameter element</th><th>Notes</th></tr>
