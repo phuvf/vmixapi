@@ -21,6 +21,7 @@ const vMixApi = {
             document.getElementById("apiDetails").innerHTML = "";
             window.history.pushState('', '', `?`);
         });
+        
         fetch('/data/api.json')
             .then(response => response.json())
             .then((data) => {
@@ -44,6 +45,7 @@ const vMixApi = {
                         document.getElementById('apiList').value = func;
                     }
                 }
+                vMixApi.addInspiration();
             });
     },
     buildLists: function (item) {
@@ -76,6 +78,12 @@ const vMixApi = {
         });
         return html;
     },
+    addInspiration: function(){
+        var randomItem = this.items[Math.floor(Math.random()*this.items.length)];
+        console.log(randomItem.name);
+        let html = `<div>Need inspiration? Start with function <a href='?function=${randomItem.name}'>${randomItem.name}</a>`;
+        document.getElementById('inspiration').innerHTML = html;
+    },
     showApiEntry: function (name) {
         const item = this.items.filter((i) => i.name == name)[0];
         if (!item) {
@@ -83,6 +91,7 @@ const vMixApi = {
             return;
         }
         window.history.pushState('', '', `?function=${item.name}`);
+        document.getElementById('inspiration').classList.add('d-none');
         let html = `
         <div class="card apiCard">
             <h5 class="card-header">${item.name}</h5>
