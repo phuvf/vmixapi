@@ -662,7 +662,7 @@
       "valueParam4": "",
       "valueExample": "https://vmix.com",
       "selectedNameExample": "",
-      "notes": "Load new URL into browser input.",
+      "notes": "Navigate specified browser input to new URL.",
       "group": "browser"
     },
     {
