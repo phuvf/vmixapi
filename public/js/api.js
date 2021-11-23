@@ -185,6 +185,9 @@ const vMixApi = {
         if (item.hasDuration) {
             q.push(`Duration=${this.duration}`);
         }
+        if (item.hasSelectedName) {
+            q.push(`SelectedName=${item.selectedNameExample}`);
+        }
         return `${item.name} ${q.join('&')}`;
     },
     buildWebScriptingFragment: function (item) {
