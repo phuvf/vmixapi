@@ -30,10 +30,13 @@ const vMixApi = {
                 this.datalist = "";
                 this.apiOptions = "";
                 data.forEach(item => vMixApi.buildLists(item));
+                vMixApi.groups.sort((a, b) => a.id.localeCompare(b.id));
+                vMixApi.groups.forEach((group) => {
+                    group.items.sort((a, b) => a.name.localeCompare(b.name))
+                });
                 document.getElementById('referenceList').innerHTML = vMixApi.buildGroups();
                 document.getElementById('apiListOptions').innerHTML = vMixApi.apiOptions;
 
-                vMixApi.groups.sort((a, b) => a.id.localeCompare(b.id));
                 //console.log(vMixApi.groups);
                 //document.getElementById('groupsWrapper').innerHTML = vMixApi.buildGroups();
                 var urlParams = new URLSearchParams(window.location.search);
