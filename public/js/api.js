@@ -7,7 +7,7 @@ const vMixApi = {
     items: [],
     datalist: "",
     apiOptions: "",
-    groups:[],
+    groups: [],
     init: function () {
         var el = document.getElementById('apiList');
         el.addEventListener('change', (event) => {
@@ -16,12 +16,12 @@ const vMixApi = {
             document.activeElement.blur();
         });
         document.getElementById('inputClear').addEventListener('click', function () {
-            console.log(`Clear click`);
-            el.value="";
+            el.value = "";
             document.getElementById("apiDetails").innerHTML = "";
             window.history.pushState('', '', `?`);
+            vMixApi.addInspiration();
         });
-        
+
         fetch('/data/api.json')
             .then(response => response.json())
             .then((data) => {
@@ -33,10 +33,9 @@ const vMixApi = {
                 document.getElementById('referenceList').innerHTML = vMixApi.buildGroups();
                 document.getElementById('apiListOptions').innerHTML = vMixApi.apiOptions;
 
-                vMixApi.groups.sort((a,b) => a.id.localeCompare(b.id));
+                vMixApi.groups.sort((a, b) => a.id.localeCompare(b.id));
                 console.log(vMixApi.groups);
                 //document.getElementById('groupsWrapper').innerHTML = vMixApi.buildGroups();
-
                 var urlParams = new URLSearchParams(window.location.search);
                 if (urlParams.has('function')) {
                     let func = urlParams.get('function');
@@ -44,8 +43,10 @@ const vMixApi = {
                         vMixApi.showApiEntry(func);
                         document.getElementById('apiList').value = func;
                     }
+                } else {
+                    vMixApi.addInspiration();
                 }
-                vMixApi.addInspiration();
+
             });
     },
     buildLists: function (item) {
@@ -57,7 +58,7 @@ const vMixApi = {
         }
         else {
             //console.log(`Creating group ${item.group}`)
-            let newGroup = {id: item.group, items: [item]}
+            let newGroup = { id: item.group, items: [item] }
             this.groups.push(newGroup);
         }
         let html = `<option value="${item.name}">`;
@@ -66,7 +67,7 @@ const vMixApi = {
         this.datalist += html;
         //document.getElementById('referenceList').innerHTML += html;
     },
-    buildGroups: function(){
+    buildGroups: function () {
         let html = "";
         this.groups.forEach((g) => {
             let groupName = camel2title(g.id);
@@ -80,18 +81,18 @@ const vMixApi = {
                 <div id="collapse${g.id}" class="accordion-collapse collapse" aria-labelledby="group-${g.id}" data-bs-parent="#referenceList">
                     <div class="accordion-body">
             `;
-            g.items.forEach((item)=>{
+            g.items.forEach((item) => {
                 html += `<p class='group-item'><a href='?function=${item.name}'>${item.name}</a></p>`;
             });
 
-            html+= `</div></div></div>`;
+            html += `</div></div></div>`;
         });
         return html;
     },
-    addInspiration: function(){
-        var randomItem = this.items[Math.floor(Math.random()*this.items.length)];
+    addInspiration: function () {
+        var randomItem = this.items[Math.floor(Math.random() * this.items.length)];
         console.log(randomItem.name);
-        let html = `<div>Need inspiration? Start with function <a href='?function=${randomItem.name}'>${randomItem.name}</a>`;
+        let html = `<div style='font-size: 1.5em'>Need inspiration? Try <a href='?function=${randomItem.name}'>${randomItem.name}</a>`;
         document.getElementById('inspiration').innerHTML = html;
     },
     showApiEntry: function (name) {
@@ -101,7 +102,7 @@ const vMixApi = {
             return;
         }
         window.history.pushState('', '', `?function=${item.name}`);
-        document.getElementById('inspiration').classList.add('d-none');
+        document.getElementById('inspiration').innerHTML = "";
         let html = `
         <div class="card apiCard">
             <h5 class="card-header">${item.name}</h5>
@@ -124,7 +125,7 @@ const vMixApi = {
                 </table>
             `
         }
-                
+
 
         html += `<h4 class='mb-3 mt-5'>Examples</h4>
                 <dl>`
@@ -132,7 +133,7 @@ const vMixApi = {
             html += `<dt>Add Shortcut dialog box value</dt>
             <dd><div class='code'>${item.valueExample}</div></dd>`;
         }
-        html +=`
+        html += `
                     <dt>Companion custom command</dt>
                         <dd>
                         <div class='code'>${this.buildCompanionFragment(item)}</div>
@@ -240,8 +241,8 @@ function ready(fn) {
 }
 
 const camel2title = (camelCase) => camelCase
-  .replace(/([A-Z])/g, (match) => ` ${match.toLowerCase()}`)
-  .replace(/^./, (match) => match.toUpperCase())
-  .replace("Ptz", "PTZ")
-  .replace("Ndi", "NDI")
-  .trim();
+    .replace(/([A-Z])/g, (match) => ` ${match.toLowerCase()}`)
+    .replace(/^./, (match) => match.toUpperCase())
+    .replace("Ptz", "PTZ")
+    .replace("Ndi", "NDI")
+    .trim();
