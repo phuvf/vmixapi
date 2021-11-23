@@ -26,7 +26,7 @@ const vMixApi = {
             .then(response => response.json())
             .then((data) => {
                 vMixApi.items = data;
-                console.log(data.length)
+                //console.log(data.length)
                 this.datalist = "";
                 this.apiOptions = "";
                 data.forEach(item => vMixApi.buildLists(item));
@@ -34,7 +34,7 @@ const vMixApi = {
                 document.getElementById('apiListOptions').innerHTML = vMixApi.apiOptions;
 
                 vMixApi.groups.sort((a, b) => a.id.localeCompare(b.id));
-                console.log(vMixApi.groups);
+                //console.log(vMixApi.groups);
                 //document.getElementById('groupsWrapper').innerHTML = vMixApi.buildGroups();
                 var urlParams = new URLSearchParams(window.location.search);
                 if (urlParams.has('function')) {
@@ -94,6 +94,7 @@ const vMixApi = {
         console.log(randomItem.name);
         let html = `<div style='font-size: 1.5em'>Need inspiration? Try <a href='?function=${randomItem.name}'>${randomItem.name}</a>`;
         document.getElementById('inspiration').innerHTML = html;
+        document.getElementById('inspiration').classList.remove('d-none');
     },
     showApiEntry: function (name) {
         const item = this.items.filter((i) => i.name == name)[0];
@@ -103,6 +104,7 @@ const vMixApi = {
         }
         window.history.pushState('', '', `?function=${item.name}`);
         document.getElementById('inspiration').innerHTML = "";
+        document.getElementById('inspiration').classList.add('d-none');
         let html = `
         <div class="card apiCard">
             <h5 class="card-header">${item.name}</h5>
