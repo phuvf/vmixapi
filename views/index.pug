@@ -1,23 +1,30 @@
 extends layout
 
 block content
-  .d-flex.align-items-center
-    .flex-grow-1
-      h1 vMix API Reference
-    .d-flex.flex-row(style='column-gap: 1em;')
-      a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
-      a.btn.btn-outline-primary(type='button' data-bs-toggle='modal' data-bs-target='#aboutModal') About
-  label.form-label.mt-5(for='exampleDataList') Search 406 API functions:
-  .input-group.input-group-lg.mb-5
-    input#apiList.form-control.form-control(list='apiListOptions' placeholder='Type to search...' autofocus)
-    button.btn.btn-outline-secondary#inputClear(type='button') Clear
-  datalist#apiListOptions
-  
-  #apiDetails
+  .container-fluid.my-3
+    .d-flex.align-items-center
+      .flex-grow-1
+        h1 vMix API Reference
+      .d-flex.flex-row(style='column-gap: 1em;')
+        //- a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
+        a.btn.btn-outline-primary(data-bs-toggle='modal' data-bs-target='#aboutModal') About
+  .d-flex.flex-row.flex-grow-1
+    .container-fluid.d-none.d-md-block(style='width: auto;')
+      .accordion-flush#referenceList
 
-  #groupsWrapper.d-flex.flex-wrap
+    .container-fluid.flex-grow-1.mb-5
+      
+      label.form-label(for='exampleDataList') Search 406 API functions:
+      .input-group.input-group-lg.mb-5
+        input#apiList.form-control.form-control(list='apiListOptions' placeholder='Type to search...' autofocus)
+        button.btn.btn-outline-secondary#inputClear(type='button') Clear
+      datalist#apiListOptions
+      
+      #apiDetails
 
-  #inspiration
+      #groupsWrapper.d-flex.flex-wrap
+
+      #inspiration
       
   .modal#aboutModal(tabindex='-1')
     .modal-dialog.modal-lg
@@ -56,11 +63,3 @@ block content
           p Happy vMixing!
         .modal-footer
           button.btn.btn-primary(type='button' data-bs-dismiss='modal') Close
-
-  #offcanvasExample.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasExampleLabel')
-    .offcanvas-header
-      h5#offcanvasExampleLabel.offcanvas-title Full API function list
-      button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
-    .offcanvas-body
-      div
-        ul#referenceList

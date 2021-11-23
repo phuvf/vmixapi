@@ -5900,9 +5900,9 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "My new input name",
       "selectedNameExample": "",
-      "notes": "Set the Display Name of the Input",
+      "notes": "Changes the display name of the specified input.",
       "group": "input"
     },
     {
@@ -5920,7 +5920,7 @@
       "valueParam4": "",
       "valueExample": "67",
       "selectedNameExample": "",
-      "notes": "Value = Volume 0-100",
+      "notes": "Set fader on master audio bus.",
       "group": "audio"
     },
     {
@@ -7277,7 +7277,7 @@
       "name": "WaitForCompletion",
       "hasValue": 0,
       "hasInput": 1,
-      "hasDuration": 1,
+      "hasDuration": 0,
       "hasSelectedName": 0,
       "inputNotes": "",
       "valueParam1": "",
@@ -7288,7 +7288,7 @@
       "valueParam4": "",
       "valueExample": "",
       "selectedNameExample": "",
-      "notes": "Wait for a video input to reach the end of playback.",
+      "notes": "Wait for a video input to reach the end of playback. Used in web scripting to pause script execution.",
       "group": "input"
     },
     {

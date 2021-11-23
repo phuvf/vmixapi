@@ -30,7 +30,7 @@ const vMixApi = {
                 this.datalist = "";
                 this.apiOptions = "";
                 data.forEach(item => vMixApi.buildLists(item));
-                document.getElementById('referenceList').innerHTML = vMixApi.datalist;
+                document.getElementById('referenceList').innerHTML = vMixApi.buildGroups();
                 document.getElementById('apiListOptions').innerHTML = vMixApi.apiOptions;
 
                 vMixApi.groups.sort((a,b) => a.id.localeCompare(b.id));
@@ -69,12 +69,22 @@ const vMixApi = {
     buildGroups: function(){
         let html = "";
         this.groups.forEach((g) => {
-            html += `<div class='group'><div class='group-header'>${camel2title(g.id)}</div>`;
+            let groupName = camel2title(g.id);
+            html += `
+            <div class='accordion-item' id='referenceList'>
+                <h5 class='accordion-header' id='group-${g.id}'>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${g.id}" aria-expanded="false" aria-controls="collapse${g.id}">
+                        ${groupName}
+                    </button>
+                </h5>
+                <div id="collapse${g.id}" class="accordion-collapse collapse" aria-labelledby="group-${g.id}" data-bs-parent="#referenceList">
+                    <div class="accordion-body">
+            `;
             g.items.forEach((item)=>{
                 html += `<p class='group-item'><a href='?function=${item.name}'>${item.name}</a></p>`;
             });
 
-            html+= `</div>`;
+            html+= `</div></div></div>`;
         });
         return html;
     },
@@ -102,8 +112,8 @@ const vMixApi = {
                     <tr><th>Parameter</th><th>Required</th></tr>
                     <tr><td>Input</td><td>${item.hasInput ? "Yes" : "No"}</td></tr>
                     <tr><td>Value</td><td>${item.hasValue ? `Yes - format: ${this.renderValueFormat(item)}` : "No"}</td></tr>
-                    <tr><td>Duration</td><td>${item.hasDuration ? "Yes" : "No"}</td></tr>
-                    <tr><td>SelectedName</td><td>${item.hasSelectedName ? "Yes" : "No"}</td></tr>
+                    ${item.hasDuration ? "<tr><td>Duration</td><td>Yes</td></tr>" : ""}
+                    ${item.hasSelectedName ? "<tr><td>SelectedName</td><td>Yes</td></tr>" : ""}
                 </table>`;
         if (item.valueParam1Notes.concat(item.valueParam2Notes) != "") {
             html += `
@@ -119,7 +129,7 @@ const vMixApi = {
         html += `<h4 class='mb-3 mt-5'>Examples</h4>
                 <dl>`
         if (item.hasValue) {
-            html += `<dt>vMix "Add Shortcut" dialog box - value field</dt>
+            html += `<dt>Add Shortcut dialog box value</dt>
             <dd><div class='code'>${item.valueExample}</div></dd>`;
         }
         html +=`
@@ -127,21 +137,21 @@ const vMixApi = {
                         <dd>
                         <div class='code'>${this.buildCompanionFragment(item)}</div>
                     </dd>
-                    <dt>HTTP GET request</dt>
+                    <dt>Web scripting</dt>
                     <dd>
-                        <div class='code'><a href="${this.buildHttpExample(item)}" target="_blank">${this.buildHttpExample(item)}</a></div>
-                    </dd>
-                    <dt>TCP (Port 8099)</dt>
-                    <dd>
-                        <div class='code'>${this.buildTcpExample(item)}</div>
+                        <div class='code'>${this.buildWebScriptingFragment(item)}</div>
                     </dd>
                     <dt>VB.NET scripting</dt>
                     <dd>
                         <div class='code'>${this.buildScriptExample(item)}</div>
                     </dd>
-                    <dt>Web scripting</dt>
+                    <dt>HTTP GET request</dt>
                     <dd>
-                        <div class='code'>${this.buildWebScriptingFragment(item)}</div>
+                        <div class='code'><a href="${this.buildHttpExample(item)}" target="_blank">${this.buildHttpExample(item)}</a></div>
+                    </dd>
+                    <dt>TCP packet ASCII</dt>
+                    <dd>
+                        <div class='code'>${this.buildTcpExample(item)}</div>
                     </dd>
                 </dl>
              
@@ -179,10 +189,10 @@ const vMixApi = {
     buildWebScriptingFragment: function (item) {
         let q = [];
         if (item.hasInput) {
-            q.push(`Input=${encodeURIComponent(this.inputName)}`);
+            q.push(`Input=${this.inputName}`);
         }
         if (item.hasValue) {
-            q.push(`Value=${encodeURI(item.valueExample)}`);
+            q.push(`Value=${item.valueExample}`);
         }
         if (item.hasDuration) {
             q.push(`Duration=500`);
@@ -194,7 +204,7 @@ const vMixApi = {
     },
     buildHttpExample: function (item) {
         let queryParams = this.buildWebScriptingFragment(item);
-        return `http://${this.ipAddress}:8088/api/?${queryParams}`;
+        return `http://${this.ipAddress}:8088/api/?${encodeURI(queryParams)}`;
     },
 
     buildTcpExample: function (item) {
@@ -230,6 +240,8 @@ function ready(fn) {
 }
 
 const camel2title = (camelCase) => camelCase
-  .replace(/([A-Z])/g, (match) => ` ${match}`)
+  .replace(/([A-Z])/g, (match) => ` ${match.toLowerCase()}`)
   .replace(/^./, (match) => match.toUpperCase())
+  .replace("Ptz", "PTZ")
+  .replace("Ndi", "NDI")
   .trim();
