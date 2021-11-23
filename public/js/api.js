@@ -127,7 +127,7 @@ const vMixApi = {
         }
 
 
-        html += `<h4 class='mb-3 mt-5'>Examples</h4>
+        html += `<h4 class='mb-3 mt-5' style='font-weight: bold; font-size: 1.2em; border-bottom: 2px solid var(--bs-primary); color: var(--bs-primary); padding-bottom: 5px;'>Examples</h4>
                 <dl>`
         if (item.hasValue) {
             html += `<dt>Add Shortcut dialog box value</dt>
