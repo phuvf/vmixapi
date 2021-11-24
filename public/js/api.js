@@ -137,7 +137,7 @@ const vMixApi = {
                 <p class=card-text' style='white-space: pre-wrap;'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
                 <table class='table'>
                     <tr><th>Parameter</th><th>Required</th></tr>
-                    <tr><td>Input</td><td>${item.hasInput ? "Yes" : "No"}</td></tr>
+                    <tr><td>Input</td><td>${item.hasInput ? "Yes" : "No"}${item.inputNotes == "" ? "" : ` - ${item.inputNotes}`}</td></tr>
                     <tr><td>Value</td><td>${item.hasValue ? `Yes - format: ${this.renderValueFormat(item)}` : "No"}</td></tr>
                     ${item.hasDuration ? "<tr><td>Duration</td><td>Yes</td></tr>" : ""}
                     ${item.hasSelectedName ? "<tr><td>SelectedName</td><td>Yes</td></tr>" : ""}
