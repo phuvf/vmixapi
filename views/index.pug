@@ -3,7 +3,8 @@ extends layout
 block content
   .d-flex.align-items-center.bg-dark.p-3
     .flex-grow-1
-      h1.mb-0(style='color: var(--bs-light); font-weight: bold;') vMix v24 API Reference
+      h1.mb-0(style='color: var(--bs-light); font-weight: bold;') vMix API Reference 
+        span(style='font-weight: normal; color: #909090;') v24
     .d-flex.flex-row(style='column-gap: 1em;')
       //- a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
       a.btn.btn-primary(data-bs-toggle='modal' data-bs-target='#aboutModal') About
@@ -12,9 +13,7 @@ block content
       .accordion-flush#referenceList
 
     .container-fluid.flex-grow-1.mb-5
-
-      //- .alert.alert-warning Warning: Replay events are currently based on API v23 - v24 (current) info coming soon.
-      
+          
       label.form-label(for='exampleDataList') Search API database:
       .input-group.input-group-lg.mb-5
         input#apiList.form-control.form-control(list='apiListOptions' placeholder='Type to search...' autofocus style='border-width: 5px; font-weight: bold;')
