@@ -14,7 +14,6 @@ const vMixApi = {
             keyboard: false
         });
         const warningDismissed = getCookie('warningDismissed');
-        console.log(warningDismissed, typeof(warningDismissed));
         if (warningDismissed != '1') {
             warningModal.show();
         }
@@ -40,6 +39,7 @@ const vMixApi = {
             .then(response => response.json())
             .then((data) => {
                 vMixApi.items = data;
+                vMixApi.checkData();
                 //console.log(data.length)
                 this.datalist = "";
                 this.apiOptions = "";
@@ -65,6 +65,13 @@ const vMixApi = {
                 }
 
             });
+    },
+    checkData: function(){
+        this.items.forEach((i)=>{
+            if (i.hasValue && i.valueExample == "") {
+                console.log(`${i.name} has no value example`);
+            }
+        });
     },
     buildLists: function (item) {
         let activeGroup = this.groups.filter((g) => g.id === item.group)
@@ -108,7 +115,7 @@ const vMixApi = {
     },
     addInspiration: function () {
         var randomItem = this.items[Math.floor(Math.random() * this.items.length)];
-        console.log(randomItem.name);
+        //console.log(randomItem.name);
         let html = `<div style='font-size: 1.5em'>Need inspiration? Try <a href='?function=${randomItem.name}'>${randomItem.name}</a>`;
         document.getElementById('inspiration').innerHTML = html;
         document.getElementById('inspiration').classList.remove('d-none');

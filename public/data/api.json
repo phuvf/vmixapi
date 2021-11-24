@@ -1038,7 +1038,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "M",
       "selectedNameExample": "",
       "notes": "Value = Bus (M,A,B,C,D,E,F,G)",
       "group": "audio"
@@ -1056,7 +1056,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "M",
       "selectedNameExample": "",
       "notes": "Value = Bus (M,A,B,C,D,E,F,G)",
       "group": "audio"
@@ -1074,7 +1074,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "M",
       "selectedNameExample": "",
       "notes": "Value = Bus (M,A,B,C,D,E,F,G)",
       "group": "audio"
@@ -4652,7 +4652,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "10",
       "selectedNameExample": "",
       "notes": "",
       "group": "replay"
@@ -4671,7 +4671,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "10",
       "selectedNameExample": "",
       "notes": "",
       "group": "replay"
@@ -5613,7 +5613,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "[from dropdown box]",
       "selectedNameExample": "Camera1",
       "notes": "",
       "group": "replay"
@@ -6451,7 +6451,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "1",
       "selectedNameExample": "",
       "notes": "",
       "group": "title"
@@ -8035,7 +8035,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "0",
       "selectedNameExample": "",
       "notes": "Start SRT output.",
       "group": "output"
@@ -8107,7 +8107,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "0",
       "selectedNameExample": "",
       "notes": "Toggle SRT output.",
       "group": "output"
@@ -8323,7 +8323,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "0",
       "selectedNameExample": "",
       "notes": "Stop SRT output.",
       "group": "output"
@@ -8449,7 +8449,7 @@
       "valueParam2Notes": "",
       "valueParam3": "",
       "valueParam4": "",
-      "valueExample": "",
+      "valueExample": "[animationName]",
       "selectedNameExample": "",
       "notes": "",
       "group": "title"
