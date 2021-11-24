@@ -3,7 +3,7 @@ extends layout
 block content
   .d-flex.align-items-center.bg-dark.p-3
     .flex-grow-1
-      h1.mb-0(style='color: var(--bs-light); font-weight: bold;') vMix API Reference
+      h1.mb-0(style='color: var(--bs-light); font-weight: bold;') vMix v24 API Reference
     .d-flex.flex-row(style='column-gap: 1em;')
       //- a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
       a.btn.btn-primary(data-bs-toggle='modal' data-bs-target='#aboutModal') About
@@ -13,7 +13,7 @@ block content
 
     .container-fluid.flex-grow-1.mb-5
 
-      .alert.alert-warning Warning: Replay events are currently based on API v23 - v24 (current) info coming soon.
+      //- .alert.alert-warning Warning: Replay events are currently based on API v23 - v24 (current) info coming soon.
       
       label.form-label(for='exampleDataList') Search API database:
       .input-group.input-group-lg.mb-5
@@ -62,3 +62,17 @@ block content
           p Happy vMixing!
         .modal-footer
           button.btn.btn-primary(type='button' data-bs-dismiss='modal') Close
+
+  .modal#warningModal(tabindex='-1')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5.modal-title.text-warning Caution!
+        .modal-body
+          p.lead This is a third-party utility that describes the vMix API and shortcut functions.
+          p It's not the original reference source - you should refer to the 
+            a(href="https://www.vmix.com/help23/index.htm?ShortcutFunctionReference.html") vMix shortcut table on vmix.com
+            |  for this.
+          p vMixAPI.com is not made, operated or endorsed, by StudioCoast Pty Ltd. so don't write to them if you find a mistake here.          
+        .modal-footer
+          button#dismissWarning.btn.btn-primary(type='button' data-bs-dismiss='modal') Close

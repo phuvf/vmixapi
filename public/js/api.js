@@ -8,7 +8,18 @@ const vMixApi = {
     datalist: "",
     apiOptions: "",
     groups: [],
+    channel: 1,
     init: function () {
+        var warningModal = new bootstrap.Modal(document.getElementById('warningModal'), {
+            keyboard: false
+        });
+        const warningDismissed = getCookie('warningDismissed');
+        console.log(warningDismissed, typeof(warningDismissed));
+        if (warningDismissed != '1') {
+            warningModal.show();
+        }
+
+
         var el = document.getElementById('apiList');
         el.addEventListener('change', (event) => {
             //console.log(`Datalist change ${el.value}`);
@@ -20,6 +31,9 @@ const vMixApi = {
             document.getElementById("apiDetails").innerHTML = "";
             window.history.pushState('', '', `?`);
             vMixApi.addInspiration();
+        });
+        document.getElementById('dismissWarning').addEventListener('click', function () {
+            setCookie('warningDismissed', '1', 365)
         });
 
         fetch('/data/api.json')
@@ -120,6 +134,7 @@ const vMixApi = {
                     <tr><td>Value</td><td>${item.hasValue ? `Yes - format: ${this.renderValueFormat(item)}` : "No"}</td></tr>
                     ${item.hasDuration ? "<tr><td>Duration</td><td>Yes</td></tr>" : ""}
                     ${item.hasSelectedName ? "<tr><td>SelectedName</td><td>Yes</td></tr>" : ""}
+                    ${item.hasChannel ? "<tr><td>Channel</td><td>Yes (range 1-8)</td></tr>" : ""}
                 </table>`;
         if (item.valueParam1Notes.concat(item.valueParam2Notes) != "") {
             html += `
@@ -165,16 +180,6 @@ const vMixApi = {
         </div>`;
         document.getElementById("apiDetails").innerHTML = html;
     },
-    renderParameters: function (item) {
-        if (!item.hasValue && !item.hasInput && !item.hasDuration) {
-            return "None";
-        }
-        let params = [];
-        if (item.hasValue) { params.push("Value"); }
-        if (item.hasInput) { params.push("Input"); }
-        if (item.hasDuration) { params.push("Duration"); }
-        return params.toString();
-    },
     renderValueFormat: function (item) {
         let params = `${item.valueParam1},${item.valueParam2},${item.valueParam3},${item.valueParam4}`;
         return `<span class='inlineCode'>${params.replace(/(\s*,?\s*)*$/, "")}</span>`;
@@ -193,6 +198,9 @@ const vMixApi = {
         if (item.hasSelectedName) {
             q.push(`SelectedName=${item.selectedNameExample}`);
         }
+        if (item.hasChannel) {
+            q.push(`Channel=${this.channel}`);
+        }
         return `${item.name} ${q.join('&')}`;
     },
     buildWebScriptingFragment: function (item) {
@@ -208,6 +216,9 @@ const vMixApi = {
         }
         if (item.hasSelectedName) {
             q.push(`SelectedName=${item.selectedNameExample}`);
+        }
+        if (item.hasChannel) {
+            q.push(`Channel=${this.channel}`);
         }
         return `Function=${item.name}${q.length == 0 ? "" : "&"}${q.join('&')}`
     },
@@ -234,6 +245,9 @@ const vMixApi = {
         if (item.hasSelectedName) {
             q.push(`SelectedName:="${item.selectedNameExample}"`);
         }
+        if (item.hasChannel) {
+            q.push(`Channel:="${this.channel}""`);
+        }
         return `API.Function("${item.name}"${q.length == 0 ? "" : ", "}${q.join(', ')})`;
     }
 }
@@ -254,3 +268,26 @@ const camel2title = (camelCase) => camelCase
     .replace("Ptz", "PTZ")
     .replace("Ndi", "NDI")
     .trim();
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
