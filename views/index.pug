@@ -3,8 +3,16 @@ extends layout
 block content
   .d-flex.align-items-center.bg-dark.p-3
     .flex-grow-1
-      h1.mb-0(style='color: var(--bs-light); font-weight: bold;') vMix API Reference 
-        span(style='font-weight: normal; color: #909090;') v24
+      .d-none.d-md-flex.flex-row
+        .d-flex.flex-column.mr-2(style='color: #909090; font-weight: bold;')
+          p.m-0(style='font-size: 1.3rem; line-height: 1.3rem;') THE 
+          p.m-0(style='font-size: 1.5rem; line-height: 1.5rem;') UNOFFICIAL
+        h1.mb-0(style='color: var(--bs-light); font-weight: bold; font-size: 3rem; line-height: 3rem;') &nbsp;vMix API Reference 
+        //- span(style='font-weight: normal; color: #909090;') v24
+      .d-flex.d-md-none
+        h5.font-weight-bold.text-light.mb-0 The unofficial
+          br
+          | vMix API reference
     .d-flex.flex-row(style='column-gap: 1em;')
       //- a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
       a.btn.btn-primary(data-bs-toggle='modal' data-bs-target='#aboutModal') About
