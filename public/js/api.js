@@ -1,7 +1,7 @@
 "use strict"
 
 const vMixApi = {
-    ipAddress: '127.0.0.1',
+    vMixUrl: 'http://127.0.0.1:8088',
     inputName: 'My input',
     duration: 100,
     items: [],
@@ -17,6 +17,28 @@ const vMixApi = {
         if (warningDismissed != '1') {
             warningModal.show();
         }
+
+        let localVMixUrl = getCookie('vMixUrl');
+        if (localVMixUrl != "") {
+            vMixApi.vMixUrl = localVMixUrl;
+        }
+        document.getElementById('vMixUrlInput').value = vMixApi.vMixUrl;
+
+        document.getElementById('saveVMixUrl').addEventListener('click', function () {
+            let newUrl = document.getElementById('vMixUrlInput').value;
+            if (newUrl == "") {
+                newUrl = 'http://127.0.0.1:8088';
+            }
+            setCookie('vMixUrl', newUrl, 365);
+            vMixApi.vMixUrl = newUrl;
+            document.location.reload();
+        });
+
+        var vMixUrlModal = document.getElementById('editUrlModal')
+        vMixUrlModal.addEventListener('shown.bs.modal', function (event) {
+            document.getElementById('vMixUrlInput').focus();
+            document.getElementById('vMixUrlInput').select();
+        })
 
 
         var el = document.getElementById('apiList');
@@ -66,8 +88,8 @@ const vMixApi = {
 
             });
     },
-    checkData: function(){
-        this.items.forEach((i)=>{
+    checkData: function () {
+        this.items.forEach((i) => {
             if (i.hasValue && i.valueExample == "") {
                 console.log(`${i.name} has no value example`);
             }
@@ -173,7 +195,15 @@ const vMixApi = {
                     <dd>
                         <div class='code'>${this.buildScriptExample(item)}</div>
                     </dd>
-                    <dt>HTTP GET request</dt>
+                    <dt>HTTP GET request 
+                        <span class="material-icons"
+                            style='vertical-align: bottom; color: var(--bs-primary); cursor:pointer;'
+                            title='Edit vMix URL'
+                            id='editUrl'
+                            data-bs-toggle='modal' data-bs-target='#editUrlModal'>
+                            settings
+                        </span>
+                    </dt>
                     <dd>
                         <div class='code'><a href="${this.buildHttpExample(item)}" target="_blank">${this.buildHttpExample(item)}</a></div>
                     </dd>
@@ -231,7 +261,7 @@ const vMixApi = {
     },
     buildHttpExample: function (item) {
         let queryParams = this.buildWebScriptingFragment(item);
-        return `http://${this.ipAddress}:8088/api/?${encodeURI(queryParams)}`;
+        return `${this.vMixUrl}/api/?${encodeURI(queryParams)}`;
     },
 
     buildTcpExample: function (item) {

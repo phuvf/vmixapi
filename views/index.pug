@@ -8,13 +8,11 @@ block content
           p.m-0(style='font-size: 1.3rem; line-height: 1.3rem;') THE 
           p.m-0(style='font-size: 1.5rem; line-height: 1.5rem;') UNOFFICIAL
         h1.mb-0(style='color: var(--bs-light); font-weight: bold; font-size: 3rem; line-height: 3rem;') &nbsp;vMix API Reference 
-        //- span(style='font-weight: normal; color: #909090;') v24
       .d-flex.d-md-none
         h5.font-weight-bold.text-light.mb-0 The unofficial
           br
           | vMix API reference
     .d-flex.flex-row(style='column-gap: 1em;')
-      //- a.btn.btn-outline-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Full function list
       a.btn.btn-primary(data-bs-toggle='modal' data-bs-target='#aboutModal') About
   .d-flex.flex-row.flex-grow-1.mt-3
     .container-fluid.d-none.d-md-block(style='width: auto; padding-left: 0;')
@@ -83,3 +81,23 @@ block content
           p vMixAPI.com is not made, operated or endorsed by StudioCoast Pty Ltd. so don't write to them if you find a mistake here.          
         .modal-footer
           button#dismissWarning.btn.btn-primary(type='button' data-bs-dismiss='modal') Close
+
+  .modal#editUrlModal(tabindex='-1')
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h5.modal-title Edit vMix URL
+          button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+        .modal-body
+          p Set the default vMix URL so the example HTTP hyperlinks work with your network setup.
+          p Details are stored locally on your device in a cookie and not sent to our servers.
+          .mb-3
+            label.form-label(for='vMixUrl') vMix URL:
+            input#vMixUrlInput.form-control.form-control-lg(placeholder='http://example.com:8088' type='url' pattern="https?://.+")
+          p Common examples:
+          ul
+            li http://127.0.0.1:8088 - Local machine &amp; default port
+            li http://192.168.xxx.xxx:8088 - Machine on local subnet
+            li http://172.xxx.xxx.xxx:8088 - Machine on local subnet (alternative IP range) 
+        .modal-footer
+          button#saveVMixUrl.btn.btn-primary(type='button' data-bs-dismiss='modal') Save
