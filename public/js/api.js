@@ -57,7 +57,7 @@ const vMixApi = {
             setCookie('warningDismissed', '1', 365)
         });
 
-        fetch('/data/api.json')
+        fetch('data/api.json')
             .then(response => response.json())
             .then((data) => {
                 vMixApi.items = data;
