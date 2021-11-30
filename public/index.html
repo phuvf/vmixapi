@@ -1,73 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Unofficial vMix API Reference</title>
     <meta charset="utf-8" />
     <meta name="Description" content="The unofficial vMix API reference" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="img/vmixapi-favicon.png"
-    />
-  </head>
-  <body>
+    <link rel="shortcut icon" type="image/png" href="img/vmixapi-favicon.png" />
+</head>
+
+<body>
     <div id="main-wrapper">
-      <div class="d-flex align-items-center bg-dark p-3">
-        <div class="flex-grow-1">
-          <div class="d-none d-md-flex flex-row">
-            <div
-              class="d-flex flex-column mr-2"
-              style="color: #909090; font-weight: bold"
-            >
-              <p class="m-0" style="font-size: 1.3rem; line-height: 1.3rem">
-                THE
-              </p>
-              <p class="m-0" style="font-size: 1.5rem; line-height: 1.5rem">
-                UNOFFICIAL
-              </p>
-            </div>
-            <h1
-              class="mb-0"
-              style="
+        <div class="d-flex align-items-center bg-dark p-3">
+            <div class="flex-grow-1">
+                <div class="d-none d-md-flex flex-row">
+                    <div class="d-flex flex-column mr-2" style="color: #909090; font-weight: bold">
+                        <p class="m-0" style="font-size: 1.3rem; line-height: 1.3rem">
+                            THE
+                        </p>
+                        <p class="m-0" style="font-size: 1.5rem; line-height: 1.5rem">
+                            UNOFFICIAL
+                        </p>
+                    </div>
+                    <h1 class="mb-0" style="
                 color: var(--bs-light);
                 font-weight: bold;
                 font-size: 3rem;
                 line-height: 3rem;
-              "
-            >
-              &nbsp;vMix API Reference
-            </h1>
-          </div>
-          <div class="d-flex d-md-none">
-            <h5 class="font-weight-bold text-light mb-0">
-              The unofficial<br />vMix API reference
-            </h5>
-          </div>
-        </div>
-        <div class="d-flex flex-row" style="column-gap: 1em">
-          <a
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#aboutModal"
-            >About</a
+              ">
+                        &nbsp;vMix API Reference
+                    </h1>
+                </div>
+                <div class="d-flex d-md-none">
+                    <h5 class="font-weight-bold text-light mb-0">
+                        The unofficial<br />vMix API reference
+                    </h5>
+                </div>
+            </div>
+            <div class="d-flex flex-row" style="column-gap: 1em">
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">About</a
           >
         </div>
       </div>
@@ -122,50 +99,42 @@
               <p>
                 vMixAPI.com is a third-party utility built by
                 <a href="https://github.com/phuvf">Nick Roberts</a>.
-              </p>
-              <p>
-                My day job is Lead Developer for
-                <a href="https://octocue.com">OctoCue </a>- a remote slide
-                control tool - but I also program and operate vMix shows for
-                corporate clients worldwide.
-              </p>
-              <p>
-                vMixAPI.com is not made, operated or endorsed, by StudioCoast
-                Pty Ltd. (the makers of vMix) - don't write to them if you find
-                a mistake.
-              </p>
-              <p>
-                All the API information is sourced from vMix's own
-                documentation, and the original source material should be
-                referenced if required:
-              </p>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.vmix.com/help23/index.htm?ShortcutFunctionReference.html"
-                    >vMix shortcut function reference table</a
+                </p>
+                <p>
+                    My day job is Lead Developer for
+                    <a href="https://octocue.com">OctoCue </a>- a remote slide control tool - but I also program and operate vMix shows for corporate clients worldwide.
+                </p>
+                <p>
+                    vMixAPI.com is not made, operated or endorsed, by StudioCoast Pty Ltd. (the makers of vMix) - don't write to them if you find a mistake.
+                </p>
+                <p>
+                    All the API information is sourced from vMix's own documentation, and the original source material should be referenced if required:
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://www.vmix.com/help24/index.htm?ShortcutFunctionReference.html">vMix shortcut function reference table</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://www.vmix.com/help23/index.htm?VBNetScripting.html"
+                    href="https://www.vmix.com/help24/index.htm?VBNetScripting.html"
                     >VB.NET scripting reference</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://www.vmix.com/help23/index.htm?WebScripting.html"
+                    href="https://www.vmix.com/help24/index.htm?WebScripting.html"
                     >Web scripting reference</a
                   >
                 </li>
                 <li>
-                  <a href="https://www.vmix.com/help23/index.htm?TCPAPI.html"
+                  <a href="https://www.vmix.com/help24/index.htm?TCPAPI.html"
                     >TCP API reference</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://www.vmix.com/help23/index.htm?DeveloperAPI.html"
+                    href="https://www.vmix.com/help24/index.htm?DeveloperAPI.html"
                     >HTTP GET API reference</a
                   >
                 </li>
@@ -188,41 +157,33 @@
               <p>
                 Questions? Comments? Found a mistake?
                 <a href="mailto: nick@zinc.uk.com">Drop me an email</a>.
-              </p>
-              <p>
-                Finally, there's no guarantee that anything on this site is
-                relevant, correct or useful. Use at your own risk.
-              </p>
-              <p>Happy vMixing!</p>
+                        </p>
+                        <p>
+                            Finally, there's no guarantee that anything on this site is relevant, correct or useful. Use at your own risk.
+                        </p>
+                        <p>Happy vMixing!</p>
             </div>
             <div class="modal-footer">
-              <button
-                class="btn btn-primary"
-                type="button"
-                data-bs-dismiss="modal"
-              >
+                <button class="btn btn-primary" type="button" data-bs-dismiss="modal">
                 Close
               </button>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="modal" id="warningModal" tabindex="-1">
+    </div>
+    </div>
+    <div class="modal" id="warningModal" tabindex="-1">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-warning">Caution!</h5>
-            </div>
-            <div class="modal-body">
-              <p class="lead">
-                This is a third-party utility that describes the vMix API and
-                shortcut functions.
-              </p>
-              <p>
-                It's not the original reference source - you should refer to the
-                <a
-                  href="https://www.vmix.com/help23/index.htm?ShortcutFunctionReference.html"
-                  >vMix shortcut table on vmix.com</a
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-warning">Caution!</h5>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">
+                        This is a third-party utility that describes the vMix API and shortcut functions.
+                    </p>
+                    <p>
+                        It's not the original reference source - you should refer to the
+                        <a href="https://www.vmix.com/help23/index.htm?ShortcutFunctionReference.html">vMix shortcut table on vmix.com</a
                 >
                 for this.
               </p>
@@ -312,15 +273,12 @@
                 alt="Logo: OctoCue"
                 height="30px"
             /></a>
-          </p>
-        </div>
-      </nav>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/api.js"></script>
-  </body>
+                    </p>
+                </div>
+                </nav>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <script src="js/api.js"></script>
+</body>
+
 </html>
