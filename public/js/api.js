@@ -1,123 +1,122 @@
 "use strict"
 
 const vMixApi = {
-    vMixUrl: 'http://127.0.0.1:8088',
-    inputName: 'My input',
-    duration: 100,
-    items: [],
-    datalist: "",
-    apiOptions: "",
-    groups: [],
-    channel: 1,
-    init: function () {
-        var warningModal = new bootstrap.Modal(document.getElementById('warningModal'), {
-            keyboard: false
-        });
-        const warningDismissed = getCookie('warningDismissed');
-        if (warningDismissed != '1') {
-            warningModal.show();
-        }
-
-        let localVMixUrl = getCookie('vMixUrl');
-        if (localVMixUrl != "") {
-            vMixApi.vMixUrl = localVMixUrl;
-        }
-        document.getElementById('vMixUrlInput').value = vMixApi.vMixUrl;
-
-        document.getElementById('saveVMixUrl').addEventListener('click', function () {
-            let newUrl = document.getElementById('vMixUrlInput').value;
-            if (newUrl == "") {
-                newUrl = 'http://127.0.0.1:8088';
-            }
-            setCookie('vMixUrl', newUrl, 365);
-            vMixApi.vMixUrl = newUrl;
-            document.location.reload();
-        });
-
-        var vMixUrlModal = document.getElementById('editUrlModal')
-        vMixUrlModal.addEventListener('shown.bs.modal', function (event) {
-            document.getElementById('vMixUrlInput').focus();
-            document.getElementById('vMixUrlInput').select();
-        })
-
-
-        var el = document.getElementById('apiList');
-        el.addEventListener('change', (event) => {
-            //console.log(`Datalist change ${el.value}`);
-            vMixApi.showApiEntry(el.value);
-            document.activeElement.blur();
-        });
-        document.getElementById('inputClear').addEventListener('click', function () {
-            el.value = "";
-            document.getElementById("apiDetails").innerHTML = "";
-            window.history.pushState('', '', `?`);
-            vMixApi.addInspiration();
-        });
-        document.getElementById('dismissWarning').addEventListener('click', function () {
-            setCookie('warningDismissed', '1', 365)
-        });
-
-        fetch('data/api.json')
-            .then(response => response.json())
-            .then((data) => {
-                vMixApi.items = data;
-                vMixApi.checkData();
-                //console.log(data.length)
-                this.datalist = "";
-                this.apiOptions = "";
-                data.forEach(item => vMixApi.buildLists(item));
-                vMixApi.groups.sort((a, b) => a.id.localeCompare(b.id));
-                vMixApi.groups.forEach((group) => {
-                    group.items.sort((a, b) => a.name.localeCompare(b.name))
-                });
-                document.getElementById('referenceList').innerHTML = vMixApi.buildGroups();
-                document.getElementById('apiListOptions').innerHTML = vMixApi.apiOptions;
-
-                //console.log(vMixApi.groups);
-                //document.getElementById('groupsWrapper').innerHTML = vMixApi.buildGroups();
-                var urlParams = new URLSearchParams(window.location.search);
-                if (urlParams.has('function')) {
-                    let func = urlParams.get('function');
-                    if (data.some(f => f.name === func)) {
-                        vMixApi.showApiEntry(func);
-                        document.getElementById('apiList').value = func;
-                    }
-                } else {
-                    vMixApi.addInspiration();
-                }
-
+        vMixUrl: 'http://127.0.0.1:8088',
+        inputName: 'My input',
+        duration: 100,
+        items: [],
+        datalist: "",
+        apiOptions: "",
+        groups: [],
+        channel: 1,
+        init: function() {
+            var warningModal = new bootstrap.Modal(document.getElementById('warningModal'), {
+                keyboard: false
             });
-    },
-    checkData: function () {
-        this.items.forEach((i) => {
-            if (i.hasValue && i.valueExample == "") {
-                console.log(`${i.name} has no value example`);
+            const warningDismissed = getCookie('warningDismissed');
+            if (warningDismissed != '1') {
+                warningModal.show();
             }
-        });
-    },
-    buildLists: function (item) {
-        let activeGroup = this.groups.filter((g) => g.id === item.group)
-        if (activeGroup.length > 0) {
-            //console.log(`group ${item.group} found`);
-            //console.log(activeGroup);
-            activeGroup[0].items.push(item);
-        }
-        else {
-            //console.log(`Creating group ${item.group}`)
-            let newGroup = { id: item.group, items: [item] }
-            this.groups.push(newGroup);
-        }
-        let html = `<option value="${item.name}">`;
-        this.apiOptions += html;
-        html = `<li><a data-function="${item.name}" href='/?function=${item.name}' title="${item.notes}">${item.name}</a></li>`;
-        this.datalist += html;
-        //document.getElementById('referenceList').innerHTML += html;
-    },
-    buildGroups: function () {
-        let html = "";
-        this.groups.forEach((g) => {
-            let groupName = camel2title(g.id);
-            html += `
+
+            let localVMixUrl = getCookie('vMixUrl');
+            if (localVMixUrl != "") {
+                vMixApi.vMixUrl = localVMixUrl;
+            }
+            document.getElementById('vMixUrlInput').value = vMixApi.vMixUrl;
+
+            document.getElementById('saveVMixUrl').addEventListener('click', function() {
+                let newUrl = document.getElementById('vMixUrlInput').value;
+                if (newUrl == "") {
+                    newUrl = 'http://127.0.0.1:8088';
+                }
+                setCookie('vMixUrl', newUrl, 365);
+                vMixApi.vMixUrl = newUrl;
+                document.location.reload();
+            });
+
+            var vMixUrlModal = document.getElementById('editUrlModal')
+            vMixUrlModal.addEventListener('shown.bs.modal', function(event) {
+                document.getElementById('vMixUrlInput').focus();
+                document.getElementById('vMixUrlInput').select();
+            })
+
+
+            var el = document.getElementById('apiList');
+            el.addEventListener('change', (event) => {
+                //console.log(`Datalist change ${el.value}`);
+                vMixApi.showApiEntry(el.value);
+                document.activeElement.blur();
+            });
+            document.getElementById('inputClear').addEventListener('click', function() {
+                el.value = "";
+                document.getElementById("apiDetails").innerHTML = "";
+                window.history.pushState('', '', `?`);
+                vMixApi.addInspiration();
+            });
+            document.getElementById('dismissWarning').addEventListener('click', function() {
+                setCookie('warningDismissed', '1', 365)
+            });
+
+            fetch('data/api.json')
+                .then(response => response.json())
+                .then((data) => {
+                    vMixApi.items = data;
+                    vMixApi.checkData();
+                    //console.log(data.length)
+                    this.datalist = "";
+                    this.apiOptions = "";
+                    data.forEach(item => vMixApi.buildLists(item));
+                    vMixApi.groups.sort((a, b) => a.id.localeCompare(b.id));
+                    vMixApi.groups.forEach((group) => {
+                        group.items.sort((a, b) => a.name.localeCompare(b.name))
+                    });
+                    document.getElementById('referenceList').innerHTML = vMixApi.buildGroups();
+                    document.getElementById('apiListOptions').innerHTML = vMixApi.apiOptions;
+
+                    //console.log(vMixApi.groups);
+                    //document.getElementById('groupsWrapper').innerHTML = vMixApi.buildGroups();
+                    var urlParams = new URLSearchParams(window.location.search);
+                    if (urlParams.has('function')) {
+                        let func = urlParams.get('function');
+                        if (data.some(f => f.name === func)) {
+                            vMixApi.showApiEntry(func);
+                            document.getElementById('apiList').value = func;
+                        }
+                    } else {
+                        vMixApi.addInspiration();
+                    }
+
+                });
+        },
+        checkData: function() {
+            this.items.forEach((i) => {
+                if (i.hasValue && i.valueExample == "") {
+                    console.log(`${i.name} has no value example`);
+                }
+            });
+        },
+        buildLists: function(item) {
+            let activeGroup = this.groups.filter((g) => g.id === item.group)
+            if (activeGroup.length > 0) {
+                //console.log(`group ${item.group} found`);
+                //console.log(activeGroup);
+                activeGroup[0].items.push(item);
+            } else {
+                //console.log(`Creating group ${item.group}`)
+                let newGroup = { id: item.group, items: [item] }
+                this.groups.push(newGroup);
+            }
+            let html = `<option value="${item.name}">`;
+            this.apiOptions += html;
+            html = `<li><a data-function="${item.name}" href='/?function=${item.name}' title="${item.notes}">${item.name}</a></li>`;
+            this.datalist += html;
+            //document.getElementById('referenceList').innerHTML += html;
+        },
+        buildGroups: function() {
+            let html = "";
+            this.groups.forEach((g) => {
+                let groupName = camel2title(g.id);
+                html += `
             <div class='accordion-item' id='referenceList'>
                 <h5 class='accordion-header' id='group-${g.id}'>
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${g.id}" aria-expanded="false" aria-controls="collapse${g.id}">
@@ -127,31 +126,31 @@ const vMixApi = {
                 <div id="collapse${g.id}" class="accordion-collapse collapse" aria-labelledby="group-${g.id}" data-bs-parent="#referenceList">
                     <div class="accordion-body">
             `;
-            g.items.forEach((item) => {
-                html += `<p class='group-item'><a href='?function=${item.name}'>${item.name}</a></p>`;
-            });
+                g.items.forEach((item) => {
+                    html += `<p class='group-item'><a href='?function=${item.name}'>${item.name}</a></p>`;
+                });
 
-            html += `</div></div></div>`;
-        });
-        return html;
-    },
-    addInspiration: function () {
-        var randomItem = this.items[Math.floor(Math.random() * this.items.length)];
-        //console.log(randomItem.name);
-        let html = `<div style='font-size: 1.5em'>Need inspiration? Try <a href='?function=${randomItem.name}'>${randomItem.name}</a>`;
-        document.getElementById('inspiration').innerHTML = html;
-        document.getElementById('inspiration').classList.remove('d-none');
-    },
-    showApiEntry: function (name) {
-        const item = this.items.filter((i) => i.name == name)[0];
-        if (!item) {
-            console.log(`Function ${name} not found`);
-            return;
-        }
-        window.history.pushState('', '', `?function=${item.name}`);
-        document.getElementById('inspiration').innerHTML = "";
-        document.getElementById('inspiration').classList.add('d-none');
-        let html = `
+                html += `</div></div></div>`;
+            });
+            return html;
+        },
+        addInspiration: function() {
+            var randomItem = this.items[Math.floor(Math.random() * this.items.length)];
+            //console.log(randomItem.name);
+            let html = `<div style='font-size: 1.5em'>Need inspiration? Try <a href='?function=${randomItem.name}'>${randomItem.name}</a>`;
+            document.getElementById('inspiration').innerHTML = html;
+            document.getElementById('inspiration').classList.remove('d-none');
+        },
+        showApiEntry: function(name) {
+                const item = this.items.filter((i) => i.name == name)[0];
+                if (!item) {
+                    console.log(`Function ${name} not found`);
+                    return;
+                }
+                window.history.pushState('', '', `?function=${item.name}`);
+                document.getElementById('inspiration').innerHTML = "";
+                document.getElementById('inspiration').classList.add('d-none');
+                let html = `
         <div class="card apiCard">
             <h5 class="card-header">${item.name}</h5>
             <div  class="card-body">
@@ -283,7 +282,7 @@ const vMixApi = {
             q.push(`SelectedName:="${item.selectedNameExample}"`);
         }
         if (item.hasChannel) {
-            q.push(`Channel:="${this.channel}""`);
+            q.push(`Channel:="${this.channel}"`);
         }
         return `API.Function("${item.name}"${q.length == 0 ? "" : ", "}${q.join(', ')})`;
     }
