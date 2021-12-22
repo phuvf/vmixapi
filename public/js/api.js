@@ -150,6 +150,7 @@ const vMixApi = {
                 window.history.pushState('', '', `?function=${item.name}`);
                 document.getElementById('inspiration').innerHTML = "";
                 document.getElementById('inspiration').classList.add('d-none');
+                document.title = `${name} | The Unofficial vMix API Reference`;
                 let html = `
         <div class="card apiCard">
             <h5 class="card-header w-100 d-flex justify-content-between">
