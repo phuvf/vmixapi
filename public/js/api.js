@@ -1,5 +1,12 @@
 "use strict"
 
+var urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has('function')) {
+    document.title = `${urlParams.get('function')} | The Unofficial vMix API Reference`;
+    document.querySelector('meta[property="og:title"]').setAttribute("content", `${urlParams.get('function')}`);
+    document.querySelector('meta[property="og:description"]').setAttribute("content", `Details and code samples for vMix API function "${urlParams.get('function')}". The unofficial vMix API reference.`);
+}
+
 const vMixApi = {
         vMixUrl: 'http://127.0.0.1:8088',
         inputName: 'My input',
