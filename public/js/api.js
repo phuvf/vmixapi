@@ -161,11 +161,12 @@ const vMixApi = {
                 <p class=card-text' style='white-space: pre-wrap;'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
                 <table class='table'>
                     <tr><th>Parameter</th><th>Required</th></tr>
-                    <tr><td>Input</td><td>${item.hasInput ? "Yes" : "No"}${item.inputNotes == "" ? "" : ` - ${item.inputNotes}`}</td></tr>
+                    <tr><td>Input</td><td>${item.hasInput ? item.hasInput == '1' ? "Yes" : item.hasInput : "No"}${item.inputNotes == "" ? "" : ` - ${item.inputNotes}`}</td></tr>
                     <tr><td>Value</td><td>${item.hasValue ? `Yes - format: ${this.renderValueFormat(item)}` : "No"}</td></tr>
                     ${item.hasDuration ? "<tr><td>Duration</td><td>Yes</td></tr>" : ""}
                     ${item.hasSelectedName ? "<tr><td>SelectedName</td><td>Yes</td></tr>" : ""}
                     ${item.hasChannel ? "<tr><td>Channel</td><td>Yes (range 1-8)</td></tr>" : ""}
+                    ${item.hasMix ? `<tr><td>Mix</td><td>${item.hasMix == '1' ? "Yes" : item.hasMix} ${item.mixNotes == "" ? "" : ` - ${item.mixNotes}`}</td></tr>` : ""}
                 </table>`;
         if (item.valueParam1Notes.concat(item.valueParam2Notes) != "") {
             html += `
@@ -232,13 +233,16 @@ const vMixApi = {
             q.push(`Value=${item.valueExample}`);
         }
         if (item.hasDuration) {
-            q.push(`Duration=${this.duration}`);
+            q.push(`Duration=500`);
         }
         if (item.hasSelectedName) {
             q.push(`SelectedName=${item.selectedNameExample}`);
         }
         if (item.hasChannel) {
             q.push(`Channel=${this.channel}`);
+        }
+        if (item.hasMix) {
+            q.push(`Mix=0`);
         }
         return `${item.name} ${q.join('&')}`;
     },
@@ -258,6 +262,9 @@ const vMixApi = {
         }
         if (item.hasChannel) {
             q.push(`Channel=${this.channel}`);
+        }
+        if (item.hasMix) {
+            q.push(`Mix=0`);
         }
         return `Function=${item.name}${q.length == 0 ? "" : "&"}${q.join('&')}`
     },
@@ -286,6 +293,9 @@ const vMixApi = {
         }
         if (item.hasChannel) {
             q.push(`Channel:="${this.channel}"`);
+        }
+        if (item.hasMix) {
+            q.push(`Mix:="0"`);
         }
         return `API.Function("${item.name}"${q.length == 0 ? "" : ", "}${q.join(', ')})`;
     }
