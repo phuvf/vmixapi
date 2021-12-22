@@ -152,7 +152,10 @@ const vMixApi = {
                 document.getElementById('inspiration').classList.add('d-none');
                 let html = `
         <div class="card apiCard">
-            <h5 class="card-header">${item.name}</h5>
+            <h5 class="card-header w-100 d-flex justify-content-between">
+                <div>${item.name}</div>
+                <div class='ml-auto flew-grow-1'>vMix v${item.version}+</div>
+                </h5>
             <div  class="card-body">
                 ${item.alert ? item.alert : ""}
                 <p class=card-text' style='white-space: pre-wrap;'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
