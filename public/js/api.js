@@ -47,6 +47,9 @@ const vMixApi = {
                 document.getElementById('vMixUrlInput').select();
             })
 
+            var inputModal = new bootstrap.Modal(document.getElementById('inputModal'));
+            //inputModal.show();
+
 
             var el = document.getElementById('apiList');
             el.addEventListener('change', (event) => {
@@ -141,6 +144,7 @@ const vMixApi = {
             });
             return html;
         },
+
         addInspiration: function() {
             var randomItem = this.items[Math.floor(Math.random() * this.items.length)];
             //console.log(randomItem.name);
@@ -162,14 +166,17 @@ const vMixApi = {
         <div class="card apiCard">
             <h5 class="card-header w-100 d-flex justify-content-between">
                 <div>${item.name}</div>
-                <div class='ml-auto flew-grow-1'>vMix v${item.version}+</div>
+                <div class='ml-auto' style='color: #b2cdf6;'>v${item.version}+</div>
                 </h5>
             <div  class="card-body">
                 ${item.alert ? item.alert : ""}
                 <p class=card-text' style='white-space: pre-wrap;'>${item.notes == "" ? "<i>(no further description available)</i>" : item.notes}</p>
                 <table class='table'>
                     <tr><th>Parameter</th><th>Required</th></tr>
-                    <tr><td>Input</td><td>${item.hasInput ? item.hasInput == '1' ? "Yes" : item.hasInput : "No"}${item.inputNotes == "" ? "" : ` - ${item.inputNotes}`}</td></tr>
+                    <tr>
+                        <td>Input<br><small><a href='#' data-bs-toggle="modal" data-bs-target="#inputModal">How to reference inputs in vMix</a></small></td>
+                        <td>${item.hasInput ? item.hasInput == '1' ? "Yes" : item.hasInput : "No"}${item.inputNotes == "" ? "" : ` - ${item.inputNotes}`}</td>
+                    </tr>
                     <tr><td>Value</td><td>${item.hasValue ? `Yes - format: ${this.renderValueFormat(item)}` : "No"}</td></tr>
                     ${item.hasDuration ? "<tr><td>Duration</td><td>Yes</td></tr>" : ""}
                     ${item.hasSelectedName ? "<tr><td>SelectedName</td><td>Yes</td></tr>" : ""}
@@ -217,6 +224,7 @@ const vMixApi = {
                     </dt>
                     <dd>
                         <div class='code'><a href="${this.buildHttpExample(item)}" target="_blank">${this.buildHttpExample(item)}</a></div>
+                        <div><small>Live vMix XML data: <a href="${this.buildXmlLink()}" target='_blank'>${this.buildXmlLink()}</a></small></div>
                     </dd>
                     <dt>TCP packet ASCII</dt>
                     <dd>
@@ -280,7 +288,9 @@ const vMixApi = {
         let queryParams = this.buildWebScriptingFragment(item);
         return `${this.vMixUrl}/api/?${encodeURI(queryParams)}`;
     },
-
+    buildXmlLink: function(){
+        return `${this.vMixUrl}/api/`;
+    },
     buildTcpExample: function (item) {
         return `FUNCTION ${this.buildCompanionFragment(item)}\\r\\n`;
     },

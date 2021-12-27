@@ -69,8 +69,8 @@
                 <label class="form-label" for="exampleDataList">Search vMix API database:</label>
                 <div class="input-group input-group-lg mb-5">
                     <input class="form-control form-control" id="apiList" list="apiListOptions" placeholder="Type to search..." autofocus style="border-width: 5px; font-weight: bold" /><button class="btn btn-outline-secondary" id="inputClear" type="button">
-            Clear
-          </button>
+                        Clear
+                    </button>
                 </div>
                 <datalist id="apiListOptions"></datalist>
                 <div id="apiDetails"></div>
@@ -149,8 +149,8 @@
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-primary" type="button" data-bs-dismiss="modal">
-              Close
-            </button>
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
@@ -167,8 +167,9 @@
                         </p>
                         <p>
                             It's not the original reference source - you should refer to the
-                            <a href="https://www.vmix.com/help23/index.htm?ShortcutFunctionReference.html">vMix shortcut table on
-                vmix.com</a> for this.
+                            <a href="https://www.vmix.com/help23/index.htm?ShortcutFunctionReference.html">vMix shortcut
+                                table on
+                                vmix.com</a> for this.
                         </p>
                         <p>
                             vMixAPI.com is not made, operated or endorsed by StudioCoast Pty Ltd. so don't write to them if you find a mistake here.
@@ -176,8 +177,8 @@
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-primary" id="dismissWarning" type="button" data-bs-dismiss="modal">
-              Close
-            </button>
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
@@ -212,8 +213,43 @@
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-primary" id="saveVMixUrl" type="button" data-bs-dismiss="modal">
-              Save
-            </button>
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="inputModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Input referencing</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            There are multiple ways to reference a specific input in vMix:
+                        </p>
+                        <ul>
+                            <li>By input number: <code>1</code> to <code>n</code>*</li>
+                            <li>By GUID (from XML): <code>877bb3e7-58bd-46a1-85ce-0d673aec6bf5</code></li>
+                            <li>By name: <code>My input</code></li>
+                        </ul>
+                        <p><small>* Generally, using input numbers is not recommended, as these will break if inputs are re-ordered.</small></p>
+                        <p>
+                            There are also some special references:
+                        </p>
+
+                        <ul>
+                            <li><code>0</code> Input in preview</li>
+                            <li><code>-1</code> Active input</li>
+                            <li><code>-3</code> Input currently under mouse cursor (hover)</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="button" data-bs-dismiss="modal">
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
