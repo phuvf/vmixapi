@@ -9539,22 +9539,23 @@
         "version": 24,
         "group": "transition"
     },
-    {
+ {
         "name": "SetColor",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasSelectedName": 1,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-3 if required.",
+        "inputNotes": "source in preview used if no input specified.",
+        "valueParam1": "Color",
+        "valueParam1Notes": "HTML #xxxxxxxx format",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "#0033AA22",
+        "selectedNameExample": "",
         "notes": "Change color of title element using HTML #xxxxxxxx format. Use SelectedIndex or SelectedValue parameters to select object in title.",
         "version": 25,
-        "group": "title",
-        "params": [{
-            "name": "Value",
-            "required": 1,
-            "parts": [],
-            "example": "#0033AA22"
-        }, {
-            "name": "Input",
-            "required": 1,
-            "parts": [],
-            "example": "My input",
-            "notes": ""
-        }]
+        "group": "title"
     }
 ]
