@@ -9540,21 +9540,21 @@
         "group": "transition"
     },
     {
-        name: "SetColor",
-        notes: "Change color of title element using HTML #xxxxxxxx format. Use SelectedIndex or SelectedValue parameters to select object in title.",
-        version: 25,
-        group: "title",
-        params: [{
-            name: "Value",
-            required: 1,
-            parts: [],
-            example: '#0033AA22'
+        "name": "SetColor",
+        "notes": "Change color of title element using HTML #xxxxxxxx format. Use SelectedIndex or SelectedValue parameters to select object in title.",
+        "version": 25,
+        "group": "title",
+        "params": [{
+            "name": "Value",
+            "required": 1,
+            "parts": [],
+            "example": "#0033AA22"
         }, {
-            name: "Input",
-            required: 1,
-            parts: [],
-            example: "My input",
-            notes: ""
+            "name": "Input",
+            "required": 1,
+            "parts": [],
+            "example": "My input",
+            "notes": ""
         }]
     }
 ]
