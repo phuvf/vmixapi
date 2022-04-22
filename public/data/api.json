@@ -9541,7 +9541,7 @@
     },
  {
         "name": "SetColor",
-        "hasValue": 0,
+        "hasValue": 1,
         "hasInput": 1,
         "hasSelectedName": 1,
         "mixNotes": "defaults to main output (Mix 0), specify Mix 0-3 if required.",
@@ -9553,7 +9553,7 @@
         "valueParam3": "",
         "valueParam4": "",
         "valueExample": "#0033AA22",
-        "selectedNameExample": "",
+        "selectedNameExample": "Text1",
         "notes": "Change color of title element using HTML #xxxxxxxx format. Use SelectedIndex or SelectedValue parameters to select object in title.",
         "version": 25,
         "group": "title"
