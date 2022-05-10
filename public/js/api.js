@@ -226,7 +226,7 @@ const vMixApi = {
                         <div class='code'><a href="${this.buildHttpExample(item)}" target="_blank">${this.buildHttpExample(item)}</a></div>
                         <div><small>Live vMix XML data: <a href="${this.buildXmlLink()}" target='_blank'>${this.buildXmlLink()}</a></small></div>
                     </dd>
-                    <dt>TCP packet ASCII</dt>
+                    <dt>TCP packet ASCII (to port 8099)</dt>
                     <dd>
                         <div class='code'>${this.buildTcpExample(item)}</div>
                     </dd>
