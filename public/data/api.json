@@ -7868,9 +7868,9 @@
         "valueParam2Notes": "",
         "valueParam3": "",
         "valueParam4": "",
-        "valueExample": "My new text",
+        "valueExample": "My new text line 1%0AMy new text line 2",
         "selectedNameExample": "myTitle.Text",
-        "notes": "Change text in title to [value]. Use SelectedName or SelectedIndex to specify which text field to modify.",
+        "notes": "Change text in title to [value]. Use SelectedName or SelectedIndex to specify which text field to modify. To send line returns, use \"%0A\" in the value field",
         "version": 24,
         "group": "title"
     },
