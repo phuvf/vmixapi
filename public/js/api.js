@@ -137,7 +137,7 @@ const vMixApi = {
                     <div class="accordion-body">
             `;
                 g.items.forEach((item) => {
-                    html += `<p class='group-item'><a href='?function=${item.name}'>${item.name}</a></p>`;
+                    html += `<p class='group-item'><a href='?function=${item.name}'>${item.name}</a>&nbsp;<span style='color: #aaaaaa;font-weight: bold; font-size: 0.8rem;'>v${item.version}</span> </p>`;
                 });
 
                 html += `</div></div></div>`;
