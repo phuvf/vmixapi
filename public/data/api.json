@@ -11175,5 +11175,24 @@
         "notes": "Move back or forward through event list by specified number of events.",
         "version": 27,
         "group": "replay"
+    },
+ {
+        "name": "SetLayer",
+        "hasValue": 1,
+        "hasInput":1,
+        "hasSelectedName": 0,
+        "mixNotes": "",
+        "inputNotes": "Target input",
+        "valueParam1": "Index",
+        "valueParam1Notes": "Layer index 1-10",
+        "valueParam2": "Source input",
+        "valueParam2Notes": "Input number to place in layer",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "4,31",
+        "selectedNameExample": "",
+        "notes": "Place content from the source input into specified layer on the target input. Example will place input 31 into layer 4 on the target input.",
+        "version": 24,
+        "group": "layers"
     }
 ]
