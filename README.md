@@ -14,11 +14,15 @@ Each new version tends to add a few new features, so this site typically needs u
 
 ## Structure
 
-Everything on this site is handled client-side, so 99% of this repository is just a plain-vanilla node.js/Express web server, used by Azure to host the pages.
+Everything on this site is handled client-side, so 99% of this repository is just a plain-vanilla node.js/Express web server, and only used by my local development machine to host these pages.
 
 The 1% we care about is in the `/public` folder, in particular the `/public/data/api.json` file. This is a long (and somewhat unwieldy) data file that contains all the API functions, along with supporting data to populate example code snippets etc.
 
 This file is fetched and parsed by `public/js/api.js` - so take a look here to see how the data is used.
+
+## Hosting
+
+Thie vmixapi.com site is hosted on Azure as a Static Web App - essentially just serving the contents of the `/public` folder as static HTML files. GitHub Actions push new code changes to the host everytime the `main` branch is updated.
 
 ## Making changes
 
