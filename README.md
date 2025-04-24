@@ -2,9 +2,7 @@
 
 vMixAPI.com is a third-party utility built originally by Nick Roberts (@phuvf on github).
 
-vMixAPI.com is not made, operated or endorsed, by StudioCoast Pty Ltd. (the makers of vMix) - don't write to them if you find a mistake.
-
-All the API information is sourced from vMix's own documentation, and the original source material should be referenced if required.
+vMixAPI.com is not made, operated or endorsed, by StudioCoast Pty Ltd. (the makers of vMix) - so don't write to them if you find a mistake.
 
 ## Source material
 
