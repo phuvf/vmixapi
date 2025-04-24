@@ -30,6 +30,6 @@ Spotted a bug? want to add a feature? Great! Fork this repo, make some changes a
 
 If you find this project useful, consider buying me a coffee:
 
-[![ko-fi](./assets/kofi_s_tag_dark_sm.png)](https://ko-fi.com/X8X073GQ3)
+[![ko-fi](./kofi_s_tag_dark_sm.png)](https://ko-fi.com/X8X073GQ3)
 
 I'm always looking for interesting ideas to work on - check out my [GitHub profile](https://github.com/phuvf) to see if I might be a good match for your project.
