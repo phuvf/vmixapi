@@ -1,4 +1,5 @@
-[{
+[
+    {
         "name": "AudioChannelMatrixApplyPreset",
         "hasValue": 1,
         "hasInput": 1,
@@ -2585,6 +2586,44 @@
         "group": "ndi"
     },
     {
+        "name": "OMTSelectSourceByIndex",
+        "hasValue": 1,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "index",
+        "valueParam1Notes": "Range 0-100",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "3",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "omt"
+    },
+    {
+        "name": "OMTSelectSourceByName",
+        "hasValue": 1,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "OmtName",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "omt"
+    },
+    {
         "name": "NextItem",
         "hasValue": 0,
         "hasInput": 1,
@@ -2686,7 +2725,7 @@
         "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
-        "mixNotes":"defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
         "inputNotes": "",
         "valueParam1": "",
         "valueParam1Notes": "",
@@ -2707,7 +2746,7 @@
         "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
-        "mixNotes":"defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
         "inputNotes": "",
         "valueParam1": "",
         "valueParam1Notes": "",
@@ -2785,7 +2824,7 @@
         "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
-        "mixNotes":"defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
         "inputNotes": "",
         "valueParam1": "",
         "valueParam1Notes": "",
@@ -2806,7 +2845,7 @@
         "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
-        "mixNotes":"defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
         "inputNotes": "",
         "valueParam1": "",
         "valueParam1Notes": "",
@@ -2884,7 +2923,7 @@
         "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
-        "mixNotes":"defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
         "inputNotes": "",
         "valueParam1": "",
         "valueParam1Notes": "",
@@ -2905,7 +2944,7 @@
         "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
-        "mixNotes":"defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
         "inputNotes": "",
         "valueParam1": "",
         "valueParam1Notes": "",
@@ -2983,7 +3022,7 @@
         "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
-        "mixNotes":"defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
         "inputNotes": "",
         "valueParam1": "",
         "valueParam1Notes": "",
@@ -3004,7 +3043,7 @@
         "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
-        "mixNotes":"defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
         "inputNotes": "",
         "valueParam1": "",
         "valueParam1Notes": "",
@@ -3073,6 +3112,402 @@
         "selectedNameExample": "",
         "notes": "",
         "version": 24,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput5",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput5In",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput5Off",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput5Out",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput5Zoom",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput6",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput6In",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput6Off",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput6Out",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput6Zoom",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput7",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput7In",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput7Off",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput7Out",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput7Zoom",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput8",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput8In",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput8Off",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput8Out",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput8Zoom",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
         "group": "overlay"
     },
     {
@@ -3322,6 +3757,82 @@
         "selectedNameExample": "",
         "notes": "Preview Overlay4 using the selected input",
         "version": 24,
+        "group": "overlay"
+    },
+    {
+        "name": "PreviewOverlayInput5",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Preview Overlay5 using the selected input",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "PreviewOverlayInput6",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Preview Overlay6 using the selected input",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "PreviewOverlayInput7",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Preview Overlay7 using the selected input",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "PreviewOverlayInput8",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Preview Overlay8 using the selected input",
+        "version": 29,
         "group": "overlay"
     },
     {
@@ -4161,6 +4672,310 @@
         "group": "replay"
     },
     {
+        "name": "ReplayCCamera1",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayCCamera2",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayCCamera3",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayCCamera4",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayCCamera5",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayCCamera6",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayCCamera7",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayCCamera8",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayDCamera1",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayDCamera2",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayDCamera3",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayDCamera4",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayDCamera5",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayDCamera6",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayDCamera7",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayDCamera8",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
         "name": "ReplayCamera1",
         "hasValue": 0,
         "hasInput": 0,
@@ -4691,7 +5506,7 @@
         "group": "replay"
     },
     {
-        "name": "ReplayUpdateSelectedSpeedFromValue", 
+        "name": "ReplayUpdateSelectedSpeedFromValue",
         "hasValue": 1,
         "hasInput": 0,
         "hasDuration": 0,
@@ -6201,6 +7016,82 @@
         "group": "replay"
     },
     {
+        "name": "ReplayAppendLastEventText",
+        "hasValue": 1,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "text",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "MyText",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayAppendLastEventTextCamera",
+        "hasValue": 1,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "cameraId",
+        "valueParam1Notes": "1-4",
+        "valueParam2": "text",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "1,MyText",
+        "selectedNameExample": "",
+        "notes": "Changes the text of the specified angle.",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayAppendSelectedEventText",
+        "hasValue": 1,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "text",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "MyText",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayAppendSelectedEventTextCamera",
+        "hasValue": 1,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "cameraId",
+        "valueParam1Notes": "1-4",
+        "valueParam2": "text",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "1,MyText",
+        "selectedNameExample": "",
+        "notes": "Changes the text of the specified angle (1-4), example: 3,angle3text",
+        "version": 29,
+        "group": "replay"
+    },
+    {
         "name": "ReplaySetSpeed",
         "hasValue": 1,
         "hasInput": 0,
@@ -6698,6 +7589,63 @@
         "selectedNameExample": "",
         "notes": "Update event to use default playback speed.",
         "version": 24,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayQuadModeOff",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayQuadModeOn",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "replay"
+    },
+    {
+        "name": "ReplayToggleQuadMode",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
         "group": "replay"
     },
     {
@@ -7808,7 +8756,7 @@
         "name": "SetOutput2",
         "hasValue": 1,
         "hasInput": 1,
-        "hasMix":1,
+        "hasMix": 1,
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "but only if value=Mix",
@@ -7829,7 +8777,7 @@
         "name": "SetOutput3",
         "hasValue": 1,
         "hasInput": 1,
-        "hasMix":1,
+        "hasMix": 1,
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "but only if value=Mix",
@@ -7850,7 +8798,7 @@
         "name": "SetOutput4",
         "hasValue": 1,
         "hasInput": 1,
-        "hasMix":1,
+        "hasMix": 1,
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "but only if value=Mix",
@@ -7871,7 +8819,7 @@
         "name": "SetOutputExternal2",
         "hasValue": 1,
         "hasInput": 1,
-        "hasMix":1,
+        "hasMix": 1,
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "but only if value=Mix",
@@ -7892,7 +8840,7 @@
         "name": "SetOutputFullscreen",
         "hasValue": 1,
         "hasInput": 1,
-        "hasMix":1,
+        "hasMix": 1,
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "but only if value=Mix",
@@ -7913,7 +8861,7 @@
         "name": "SetOutputFullscreen2",
         "hasValue": 1,
         "hasInput": 1,
-        "hasMix":1,
+        "hasMix": 1,
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "but only if value=Mix",
@@ -9052,6 +10000,82 @@
         "group": "transition"
     },
     {
+        "name": "SetStingerGTInput5",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Assign GT Input as animation source for Stinger 5.",
+        "version": 29,
+        "group": "transition"
+    },
+    {
+        "name": "SetStingerGTInput6",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Assign GT Input as animation source for Stinger 6.",
+        "version": 29,
+        "group": "transition"
+    },
+    {
+        "name": "SetStingerGTInput7",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Assign GT Input as animation source for Stinger 7.",
+        "version": 29,
+        "group": "transition"
+    },
+    {
+        "name": "SetStingerGTInput8",
+        "hasValue": 0,
+        "hasInput": 1,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Assign GT Input as animation source for Stinger 8.",
+        "version": 29,
+        "group": "transition"
+    },
+    {
         "name": "Stinger1",
         "hasValue": 0,
         "hasInput": 0,
@@ -9133,6 +10157,90 @@
         "selectedNameExample": "",
         "notes": "",
         "version": 24,
+        "group": "transition"
+    },
+    {
+        "name": "Stinger5",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "hasMix": "Optional",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "but input can be specified. Source in preview used if no input specified.",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "transition"
+    },
+    {
+        "name": "Stinger6",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "hasMix": "Optional",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "but input can be specified. Source in preview used if no input specified.",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "transition"
+    },
+    {
+        "name": "Stinger7",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "hasMix": "Optional",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "but input can be specified. Source in preview used if no input specified.",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
+        "group": "transition"
+    },
+    {
+        "name": "Stinger8",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "hasMix": "Optional",
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "but input can be specified. Source in preview used if no input specified.",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "",
+        "version": 29,
         "group": "transition"
     },
     {
@@ -9595,7 +10703,7 @@
         "name": "OverlayInput1Last",
         "hasValue": 0,
         "hasInput": 0,
-        "hasMix" : "Optional",
+        "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
@@ -9616,7 +10724,7 @@
         "name": "OverlayInput2Last",
         "hasValue": 0,
         "hasInput": 0,
-        "hasMix" : "Optional",
+        "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
@@ -9637,7 +10745,7 @@
         "name": "OverlayInput3Last",
         "hasValue": 0,
         "hasInput": 0,
-        "hasMix" : "Optional",
+        "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
@@ -9658,7 +10766,7 @@
         "name": "OverlayInput4Last",
         "hasValue": 0,
         "hasInput": 0,
-        "hasMix" : "Optional",
+        "hasMix": "Optional",
         "hasDuration": 0,
         "hasSelectedName": 0,
         "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
@@ -9673,6 +10781,90 @@
         "selectedNameExample": "",
         "notes": "Toggle overlay 4 on/off with last used input on this channel.",
         "version": 25,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput5Last",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Toggle overlay 5 on/off with last used input on this channel.",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput6Last",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Toggle overlay 6 on/off with last used input on this channel.",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput7Last",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Toggle overlay 7 on/off with last used input on this channel.",
+        "version": 29,
+        "group": "overlay"
+    },
+    {
+        "name": "OverlayInput8Last",
+        "hasValue": 0,
+        "hasInput": 0,
+        "hasMix": "Optional",
+        "hasDuration": 0,
+        "hasSelectedName": 0,
+        "mixNotes": "defaults to main output (Mix 0), specify Mix 0-15 if required.",
+        "inputNotes": "",
+        "valueParam1": "",
+        "valueParam1Notes": "",
+        "valueParam2": "",
+        "valueParam2Notes": "",
+        "valueParam3": "",
+        "valueParam4": "",
+        "valueExample": "",
+        "selectedNameExample": "",
+        "notes": "Toggle overlay 8 on/off with last used input on this channel.",
+        "version": 29,
         "group": "overlay"
     },
     {
@@ -10010,7 +11202,7 @@
         "version": 24,
         "group": "transition"
     },
- {
+    {
         "name": "SetColor",
         "hasValue": 1,
         "hasInput": 1,
@@ -10029,7 +11221,7 @@
         "version": 25,
         "group": "title"
     },
- {
+    {
         "name": "ReplaySetChannelAToBTimecode",
         "hasValue": 0,
         "hasInput": 0,
@@ -10048,7 +11240,7 @@
         "version": 26,
         "group": "replay"
     },
- {
+    {
         "name": "ReplaySetChannelBtoATimecode",
         "hasValue": 0,
         "hasInput": 0,
@@ -10067,7 +11259,7 @@
         "version": 26,
         "group": "replay"
     },
- {
+    {
         "name": "ReplaySetTimecode",
         "hasValue": 1,
         "hasInput": 0,
@@ -10086,7 +11278,7 @@
         "version": 26,
         "group": "replay"
     },
- {
+    {
         "name": "Undo",
         "hasValue": 0,
         "hasInput": 0,
@@ -10105,7 +11297,7 @@
         "version": 27,
         "group": "input"
     },
- {
+    {
         "name": "SetVolumeBusMixer",
         "hasValue": 1,
         "hasInput": 1,
@@ -10124,7 +11316,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeBusMixerA",
         "hasValue": 1,
         "hasInput": 1,
@@ -10143,7 +11335,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeBusMixerB",
         "hasValue": 1,
         "hasInput": 1,
@@ -10162,7 +11354,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeBusMixerC",
         "hasValue": 1,
         "hasInput": 1,
@@ -10181,8 +11373,7 @@
         "version": 27,
         "group": "audio"
     },
-
- {
+    {
         "name": "SetVolumeBusMixerD",
         "hasValue": 1,
         "hasInput": 1,
@@ -10201,7 +11392,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeBusMixerE",
         "hasValue": 1,
         "hasInput": 1,
@@ -10220,7 +11411,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeBusMixerF",
         "hasValue": 1,
         "hasInput": 1,
@@ -10239,7 +11430,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeBusMixerG",
         "hasValue": 1,
         "hasInput": 1,
@@ -10258,7 +11449,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeBusMixerM",
         "hasValue": 1,
         "hasInput": 1,
@@ -10277,7 +11468,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer1",
         "hasValue": 1,
         "hasInput": 1,
@@ -10296,7 +11487,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer2",
         "hasValue": 1,
         "hasInput": 1,
@@ -10315,7 +11506,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer3",
         "hasValue": 1,
         "hasInput": 1,
@@ -10334,7 +11525,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer4",
         "hasValue": 1,
         "hasInput": 1,
@@ -10353,7 +11544,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer5",
         "hasValue": 1,
         "hasInput": 1,
@@ -10372,7 +11563,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer6",
         "hasValue": 1,
         "hasInput": 1,
@@ -10391,7 +11582,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer7",
         "hasValue": 1,
         "hasInput": 1,
@@ -10410,7 +11601,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer8",
         "hasValue": 1,
         "hasInput": 1,
@@ -10429,7 +11620,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer9",
         "hasValue": 1,
         "hasInput": 1,
@@ -10448,7 +11639,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer10",
         "hasValue": 1,
         "hasInput": 1,
@@ -10467,7 +11658,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer11",
         "hasValue": 1,
         "hasInput": 1,
@@ -10486,7 +11677,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer12",
         "hasValue": 1,
         "hasInput": 1,
@@ -10505,7 +11696,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer13",
         "hasValue": 1,
         "hasInput": 1,
@@ -10524,7 +11715,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer14",
         "hasValue": 1,
         "hasInput": 1,
@@ -10543,7 +11734,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer15",
         "hasValue": 1,
         "hasInput": 1,
@@ -10562,7 +11753,7 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SetVolumeChannelMixer16",
         "hasValue": 1,
         "hasInput": 1,
@@ -10581,10 +11772,10 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SoloAllOff",
         "hasValue": 0,
-        "hasInput":0,
+        "hasInput": 0,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10600,10 +11791,10 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SoloPFL",
         "hasValue": 0,
-        "hasInput":0,
+        "hasInput": 0,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10619,10 +11810,10 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SoloPFLOff",
         "hasValue": 0,
-        "hasInput":0,
+        "hasInput": 0,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10638,10 +11829,10 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "SoloPFLOn",
         "hasValue": 0,
-        "hasInput":0,
+        "hasInput": 0,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10657,10 +11848,10 @@
         "version": 27,
         "group": "audio"
     },
- {
+    {
         "name": "Effect1",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10676,10 +11867,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect2",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10695,10 +11886,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect3",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10714,10 +11905,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect4",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10733,10 +11924,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect1On",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10752,10 +11943,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect4On",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10771,10 +11962,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect2On",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10790,10 +11981,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect3On",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10809,10 +12000,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect1Off",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10828,10 +12019,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect4Off",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10847,10 +12038,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect2Off",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10866,10 +12057,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "Effect3Off",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10885,10 +12076,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "loop",
         "hasValue": 0,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10904,10 +12095,10 @@
         "version": 27,
         "group": "input"
     },
- {
+    {
         "name": "SetCrop",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10923,10 +12114,10 @@
         "version": 27,
         "group": "input"
     },
- {
+    {
         "name": "SetCropX1",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10942,10 +12133,10 @@
         "version": 27,
         "group": "input"
     },
- {
+    {
         "name": "SetCropX2",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10961,10 +12152,10 @@
         "version": 27,
         "group": "input"
     },
- {
+    {
         "name": "SetCropY1",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10980,10 +12171,10 @@
         "version": 27,
         "group": "input"
     },
- {
+    {
         "name": "SetCropY2",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -10999,10 +12190,10 @@
         "version": 27,
         "group": "input"
     },
- {
+    {
         "name": "SetEffect1Strength",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11018,10 +12209,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "SetEffect2Strength",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11037,10 +12228,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "SetEffect3Strength",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11056,10 +12247,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "SetEffect4Strength",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11075,10 +12266,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "SetFrameDelay",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11094,10 +12285,10 @@
         "version": 27,
         "group": "effects"
     },
- {
+    {
         "name": "SetLayer[X]Crop",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11113,10 +12304,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]CropX1",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11132,10 +12323,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]CropX2",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11151,10 +12342,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]CropY1",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11170,10 +12361,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]CropY2",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11189,10 +12380,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]Height",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11208,10 +12399,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]Width",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11227,10 +12418,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]PanX",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11246,10 +12437,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]PanY",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11265,10 +12456,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]Rectangle",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11284,10 +12475,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]X",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11303,10 +12494,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]Y",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11322,10 +12513,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayer[X]Zoom",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11341,10 +12532,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicCrop",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11360,10 +12551,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicCropX1",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11379,10 +12570,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicCropX2",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11398,10 +12589,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicCropY1",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11417,10 +12608,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicCropY2",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11436,10 +12627,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicHeight",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11455,10 +12646,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicWidth",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11474,10 +12665,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicPanX",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11493,10 +12684,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicPanY",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11512,10 +12703,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicRectangle",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11531,10 +12722,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SetLayerDynamicZoom",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11550,10 +12741,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "SwapLayerAnimated",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11569,10 +12760,10 @@
         "version": 27,
         "group": "layers"
     },
- {
+    {
         "name": "ReplayScrollSelectedEvent",
         "hasValue": 1,
-        "hasInput":0,
+        "hasInput": 0,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "",
@@ -11588,10 +12779,10 @@
         "version": 27,
         "group": "replay"
     },
- {
+    {
         "name": "SetLayer",
         "hasValue": 1,
-        "hasInput":1,
+        "hasInput": 1,
         "hasSelectedName": 0,
         "mixNotes": "",
         "inputNotes": "Target input",
