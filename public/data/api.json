@@ -2756,7 +2756,7 @@
         "valueParam4": "",
         "valueExample": "",
         "selectedNameExample": "",
-        "notes": "Transition out to overlay1 with specified input.",
+        "notes": "Transition In to Overlay1 with selected Input.",
         "version": 24,
         "group": "overlay"
     },
